@@ -7,6 +7,8 @@ public class BasicController : NetworkBehaviour {
 	public KeyCode upKey, downKey, leftKey, rightKey;
 	public float speed = 3;
 	private Rigidbody2D rigid;
+	public GameObject bulletPrefab_r;
+	public Transform bulletSpawn_r;
 
 
 	void Start() {
@@ -29,5 +31,20 @@ public class BasicController : NetworkBehaviour {
 		} else {
 			rigid.velocity = new Vector2(0, 0);
 		}
+
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			fire();
+		}
 	}
+
+	void fire() {
+		GameObject bullet_r = Instantiate(bulletPrefab_r, bulletSpawn_r.position, bulletSpawn_r.rotation);
+		bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
+		Destroy(bullet_r, 2);
+	}
+	/*
+	public override void OnStartLocalPlayer() {
+		GetComponent<MeshRenderer>().material.color = Color.blue;
+	}
+	*/
 }

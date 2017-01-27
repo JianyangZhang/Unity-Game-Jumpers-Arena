@@ -19,7 +19,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\da
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+- Completed reload, in  0.056 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -27,6 +27,6 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.157373 ms
+UnloadTime: 3.616674 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1318 -> priority: 1 
+  Thread -> id: 1278 -> priority: 1 
