@@ -33,14 +33,16 @@ public class BasicController : NetworkBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space)) {
-			fire();
+			CmdFire();
 		}
 	}
 
-	void fire() {
+	[Command]
+	void CmdFire() {
 		GameObject bullet_r = Instantiate(bulletPrefab_r, bulletSpawn_r.position, bulletSpawn_r.rotation);
 		bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
 		Destroy(bullet_r, 2);
+		NetworkServer.Spawn(bullet_r);
 	}
 	/*
 	public override void OnStartLocalPlayer() {

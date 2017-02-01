@@ -19,7 +19,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\da
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.056 seconds
+- Completed reload, in  0.060 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -27,6 +27,134 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.616674 ms
+UnloadTime: 3.059866 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   10.18.15.4278
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.120 seconds
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.256443 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   10.18.15.4278
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.141 seconds
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer data sync\dataSync\Build\executable1.0_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.836914 ms
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
+ 
+(Filename:  Line: 488)
+
+StartServer listen failed.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1278 -> priority: 1 
+  Thread -> id: 1c7c -> priority: 1 
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: dd0 -> priority: 1 
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:52984}
+ServerDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Log: connection {2} has been disconnected by timeout; address {::ffff:127.0.0.1:52985}
+ServerDisconnected due to error: Timeout
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 480 -> priority: 1 
