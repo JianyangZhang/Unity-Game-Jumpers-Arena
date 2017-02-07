@@ -19,7 +19,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.052 seconds
+- Completed reload, in  0.410 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -27,7 +27,7 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 3.710756 ms
+UnloadTime: 2.809261 ms
 MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -40,6 +40,15 @@ To add a scene to the build settings use the menu File->Build Settings...
 MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+NetworkLobbyManager LobbyScene is empty. Set the LobbyScene in the inspector for the NetworkLobbyMangaer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Scene 'NetworkLobby' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 127)
 
 NetworkLobbyManager LobbyScene is empty. Set the LobbyScene in the inspector for the NetworkLobbyMangaer
  
@@ -58,18 +67,9 @@ To add a scene to the build settings use the menu File->Build Settings...
  
 (Filename:  Line: 127)
 
-NetworkLobbyManager LobbyScene is empty. Set the LobbyScene in the inspector for the NetworkLobbyMangaer
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Scene 'NetworkLobby' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
 NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1a64 -> priority: 1 
+  Thread -> id: 3c0 -> priority: 1 
