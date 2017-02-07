@@ -1,0 +1,106 @@
+fileFormatVersion: 2
+guid: d61d12d2d79f7244e9f4de798743e099
+timeCreated: 1459461718
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JazzCreateFontUI1024x512_0
+    21300002: JazzCreateFontUI1024x512_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: JazzCreateFontUI1024x512_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 255, y: 248}
+        - {x: 245, y: 256}
+        - {x: -246, y: 256}
+        - {x: -248, y: 255}
+        - {x: -254, y: 250}
+        - {x: -256, y: 247}
+        - {x: -256, y: -247}
+        - {x: -252, y: -253}
+        - {x: -245, y: -256}
+        - {x: 248, y: -256}
+        - {x: 256, y: -245}
+        - {x: 256, y: 242}
+      - - {x: -237, y: -225}
+        - {x: -237, y: 226}
+        - {x: -227, y: 236}
+        - {x: 224, y: 236}
+        - {x: 234, y: 226}
+        - {x: 234, y: -225}
+        - {x: 224, y: -235}
+        - {x: -227, y: -235}
+        - {x: -227, y: -234}
+    - name: JazzCreateFontUI1024x512_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -256, y: 256}
+        - {x: -256, y: -256}
+        - {x: 256, y: -256}
+        - {x: 256, y: 256}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
