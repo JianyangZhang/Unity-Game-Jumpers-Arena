@@ -19,7 +19,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.064 seconds
+- Completed reload, in  0.038 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -27,7 +27,6 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 2.100638 ms
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -49,7 +48,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.140 seconds
+- Completed reload, in  0.067 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -57,431 +56,94 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 2.290089 ms
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
+UnloadTime: 2.506482 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   10.18.15.4278
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.072 seconds
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 3.486665 ms
+UnloadTime: 1.622948 ms
+Socket: bind failed, error: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+Cannot open socket on ip {*} and port {7777}; check please your network, most probably port has been already occupied
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Scene 'NetworkLobby' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-NetworkLobbyManager LobbyScene is empty. Set the LobbyScene in the inspector for the NetworkLobbyMangaer
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: -1 connectionId: 0 isReady: False channel count: 0], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Scene 'NetworkLobby' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-NetworkLobbyManager LobbyScene is empty. Set the LobbyScene in the inspector for the NetworkLobbyMangaer
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: -1 connectionId: 0 isReady: False channel count: 0], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Failed to send internal buffer channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: 488)
 
-Empty player list given to NetworkServer.Destroy(), nothing to do.
+StartServer listen failed.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: 447)
 
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.124442 ms
 
-Failed to send internal buffer channel:0 bytesToSend:20
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 706.
+Total: 2.209262 ms (FindLiveObjects: 0.085103 ms CreateObjectMapping: 0.068424 ms MarkObjects: 2.035207 ms  DeleteObjects: 0.019672 ms)
 
-Send Error: WrongConnection channel:0 bytesToSend:20
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: 447)
 
-Empty player list given to NetworkServer.Destroy(), nothing to do.
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: 447)
 
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: 447)
 
-NetworkLobbyManager can't accept new connection [hostId: 0 connectionId: 1 isReady: False channel count: 2], not in lobby and game already in progress.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at Prototype.NetworkLobby.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Failed to send internal buffer channel:0 bytesToSend:30
+NullReferenceException: Object reference not set to an instance of an object
+  at Prototype.NetworkLobby.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Send Error: WrongConnection channel:0 bytesToSend:30
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+UnloadTime: 3.455019 ms
+UnloadTime: 6.199705 ms
 
-Empty player list given to NetworkServer.Destroy(), nothing to do.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 706.
+Total: 1.718315 ms (FindLiveObjects: 0.065431 ms CreateObjectMapping: 0.046186 ms MarkObjects: 1.596006 ms  DeleteObjects: 0.009408 ms)
 
-Scene 'NetworkLobby' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
 
-NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 706.
+Total: 3.124015 ms (FindLiveObjects: 0.169351 ms CreateObjectMapping: 0.059016 ms MarkObjects: 2.857158 ms  DeleteObjects: 0.036350 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1f1c -> priority: 1 
+  Thread -> id: efc -> priority: 1 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 15d4 -> priority: 1 
+  Thread -> id: 1f48 -> priority: 1 
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1df8 -> priority: 1 
