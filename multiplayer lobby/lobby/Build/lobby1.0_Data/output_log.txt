@@ -19,7 +19,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.036 seconds
+- Completed reload, in  0.055 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -27,6 +27,7 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
+UnloadTime: 318.906555 ms
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -48,7 +49,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.068 seconds
+- Completed reload, in  0.052 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -56,7 +57,7 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 2.272555 ms
+UnloadTime: 3.121449 ms
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -78,7 +79,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.086 seconds
+- Completed reload, in  0.261 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -86,7 +87,7 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 3.786023 ms
+UnloadTime: 2.500067 ms
 Initialize engine version: 5.5.0f3 (38b4efef76f0)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -95,7 +96,6 @@ Direct3D:
     Vendor:   Intel
     VRAM:     1136 MB
     Driver:   10.18.15.4278
-UnloadTime: 2.240481 ms
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -109,7 +109,7 @@ Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.162 seconds
+- Completed reload, in  0.303 seconds
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\lobby\Build\lobby1.0_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
@@ -117,113 +117,12 @@ XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 1.935563 ms
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GDmeOntDestroyOnLoad only wobk for root GameObjects or components on root GameObjects.
- 
-(Fcts.
- 
-(Filename:  Line: 447)
-
-ename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
- 
-(Filename:  Line: 447)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.898352 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 936.
-Total: 27.362181 ms (FindLiveObjects: 0.159087 ms CreateObjectMapping: 0.176621 ms MarkObjects: 27.006800 ms  DeleteObjects: 0.017961 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.367629 ms
-UnloadTime: 5.950382 ms
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 959.
-Total: 8.188297 ms (FindLiveObjects: 0.196721 ms CreateObjectnloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Mapping: 0.165502 ms MarkObjects: 7.809823 ms  DeleteObjects: 0.013257 ms)
-
-UnloadTime: 6.963495 ms
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects own loadi
-ng 3 un3.83 9908 ms (Finduci memory usag0. Load9  Objects now:m936.
-sota C eateObjectMap7i07000.483677dLs MarkObjects: 3.155661 ms  DeleteObjects: 0.019244 ms)
-
-iveObjects: 0.123592 ms CreateObjectMapping: 0.090235 ms MarkObjects: 3.040622 ms  DeleteObjects: 0.014540 ms)
-
+UnloadTime: 5.296926 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 760 -> priority: 1 
+  Thread -> id: 2b60 -> priority: 1 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1468 -> priority: 1 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:59364}
-ServerDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-ClientRpc call on un-spawned object
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Prototype.NetworkLobby.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
+  Thread -> id: fa8 -> priority: 1 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 420 -> priority: 1 
-Log: connection {2} has been disconnected by timeout; address {::ffff:127.0.0.1:62060}
-ServerDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-ClientRpc call on un-spawned object
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Prototype.NetworkLobby.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Log: connection {3} has been disconnected by timeout; address {::ffff:127.0.0.1:62087}
-ServerDisconnected due to error: Timeout
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-ClientRpc call on un-spawned object
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Prototype.NetworkLobby.LobbyPlayer.OnDestroy () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
+  Thread -> id: 1578 -> priority: 1 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: bb8 -> priority: 1 
+  Thread -> id: 248c -> priority: 1 
