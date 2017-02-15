@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartMenuSceneChange : MonoBehaviour {
+public class StartMenuManager : MonoBehaviour {
 	public InputField playerNameInput;
 	public Button[] buttons;
 	public GameObject alert;

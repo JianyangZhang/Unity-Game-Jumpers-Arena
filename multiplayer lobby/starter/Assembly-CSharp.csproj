@@ -46,11 +46,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LobbySample\Scripts\DraggablePanel.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\EventSystemChecker.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyCountdownPanel.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyHook.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyInfoPanel.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyMainMenu.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyManager.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyPlayer.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyPlayerList.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyServerEntry.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyServerList.cs" />
+     <Compile Include="Assets\LobbySample\Scripts\Lobby\LobbyTopPanel.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
+     <Compile Include="Assets\scripts\LobbyManager.cs" />
      <Compile Include="Assets\scripts\LobbySceneChange.cs" />
-     <Compile Include="Assets\scripts\StartMenuSceneChange.cs" />
+     <Compile Include="Assets\scripts\StartMenuManager.cs" />
      <None Include="Assets\font\Disney\waltograph.txt" />
      <None Include="Assets\font\Komika\Komika.txt" />
+     <None Include="Assets\LobbySample\Documentation.txt" />
+     <None Include="Assets\LobbySample\Instruction.txt" />
+     <None Include="Assets\font\OpenSans\License!.txt" />
      <None Include="Assets\font\Disney\license.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
