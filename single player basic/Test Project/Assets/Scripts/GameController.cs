@@ -24,18 +24,21 @@ public class GameController : MonoBehaviour {
     public IEnumerator Spawn()
     {
         //yield return new WaitForSeconds(2.0f);
+        int i = 0;
         while (true)
         {
             GameObject item = items[Random.Range(0, items.Length)];
             Vector3 spawnPosition = new Vector3(
-                //5f,
-                transform.position.x + Random.Range(-maxWidth, maxWidth),
-                Random.Range(0,30),
+                //Random.Range(-maxWidth, maxWidth),
+                Random.Range(-15, 15),
+                Random.Range(0,100),
                 -5f
             );
             //Quaternion spawnRotation = Quaternion.identity;
             Instantiate(item, spawnPosition, Quaternion.identity);
-            yield return new WaitForSeconds(Random.Range(itemTimeInterval * 0.5f, itemTimeInterval));
+            i++;
+            if (i > 5)
+                yield return new WaitForSeconds(Random.Range(itemTimeInterval * 0.5f, itemTimeInterval));
         }
         yield return new WaitForSeconds(2.0f);
         

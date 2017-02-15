@@ -71,11 +71,23 @@ public class Onpu : MonoBehaviour
         {
             StartCoroutine(SpeedUp());
         }
+
+        if (collision.gameObject.tag == "SpeedDown")
+        {
+            StartCoroutine(SpeedDown());
+        }
     }
 
     IEnumerator SpeedUp()
     {
-        accelerateRation = 3f;
+        accelerateRation = 1.5f;
+        yield return new WaitForSeconds(3.0f);
+        accelerateRation = 1;
+    }
+
+    IEnumerator SpeedDown()
+    {
+        accelerateRation = 0.5f;
         yield return new WaitForSeconds(3.0f);
         accelerateRation = 1;
     }
@@ -88,6 +100,6 @@ public class Onpu : MonoBehaviour
     //    //    GetComponent<Rigidbody2D>().velocity = new Vector2(0, 15);
     //    //}
 
-        
+
     //}
 }
