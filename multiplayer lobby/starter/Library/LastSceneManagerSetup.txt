@@ -1,10 +1,10 @@
 sceneSetups:
 - path: Assets/scenes/startmenu.unity
   isLoaded: 1
-  isActive: 0
+  isActive: 1
 - path: Assets/scenes/lobby.unity
-  isLoaded: 1
+  isLoaded: 0
   isActive: 0
 - path: Assets/scenes/arena.unity
-  isLoaded: 1
-  isActive: 1
+  isLoaded: 0
+  isActive: 0

@@ -15,7 +15,8 @@ public class LobbySceneChange : MonoBehaviour {
 		
 	}
 
-	public void pressBackBtn() {
+	public void pressBackBtn(GameObject obj) {
+		Destroy(obj);
 		SceneManager.LoadScene(0);
 	}
 }
