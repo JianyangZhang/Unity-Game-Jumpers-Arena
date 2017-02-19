@@ -1,50 +1,72 @@
-Initialize engine version: 5.5.0f3 (38b4efef76f0)
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1136 MB
-    Driver:   10.18.15.4278
+    Renderer: NVIDIA GeForce GT 750M (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   20.19.15.4549
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.048 seconds
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\GitHub\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.037 seconds
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.279822 ms
+UnloadTime: 1.044758 ms
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 750M (ID=0xfe4)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   20.19.15.4549
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\wddwxy\Documents\CSCI526\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.075121 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.033767 ms
+UnloadTime: 3.154802 ms
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 671.
-Total: 1.002848 ms (FindLiveObjects: 0.067569 ms CreateObjectMapping: 0.047897 ms MarkObjects: 0.773625 ms  DeleteObjects: 0.112900 ms)
+Total: 0.823233 ms (FindLiveObjects: 0.060299 ms CreateObjectMapping: 0.046186 ms MarkObjects: 0.654737 ms  DeleteObjects: 0.059016 ms)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.358801 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.966206 ms
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 499.
-Total: 0.602564 ms (FindLiveObjects: 0.064575 ms CreateObjectMapping: 0.034212 ms MarkObjects: 0.479827 ms  DeleteObjects: 0.023093 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.783034 ms
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 698.
-Total: 0.863005 ms (FindLiveObjects: 0.065003 ms CreateObjectMapping: 0.045331 ms MarkObjects: 0.689805 ms  DeleteObjects: 0.062437 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 671.
+Total: 0.572628 ms (FindLiveObjects: 0.032501 ms CreateObjectMapping: 0.031218 ms MarkObjects: 0.453313 ms  DeleteObjects: 0.054312 ms)
 
 NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
  
@@ -54,27 +76,73 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
  
 (Filename:  Line: 447)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.500354 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 709.
-Total: 1.218813 ms (FindLiveObjects: 0.076977 ms CreateObjectMapping: 0.072701 ms MarkObjects: 1.058015 ms  DeleteObjects: 0.010263 ms)
-
-MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+NetworkLobbyManager no GamePlayer prefab is registered. Please add a GamePlayer prefab.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.478544 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 710.
-Total: 1.291942 ms (FindLiveObjects: 0.059443 ms CreateObjectMapping: 0.043620 ms MarkObjects: 1.177758 ms  DeleteObjects: 0.010691 ms)
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.444332 ms
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 710.
-Total: 1.578042 ms (FindLiveObjects: 0.061582 ms CreateObjectMapping: 0.044475 ms MarkObjects: 1.455733 ms  DeleteObjects: 0.015823 ms)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.230933 ms
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkLobbyManager.SceneLoadedForPlayer (UnityEngine.Networking.NetworkConnection conn, UnityEngine.GameObject lobbyPlayerGameObject) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkLobbyManager.OnServerSceneLoadedMessage (UnityEngine.Networking.NetworkMessage netMsg) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.InvokeHandler (Int16 msgType, UnityEngine.Networking.NetworkReader reader, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.InvokeHandlerOnServer (UnityEngine.Networking.ULocalConnectionToServer conn, Int16 msgType, UnityEngine.Networking.MessageBase msg, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.ULocalConnectionToServer.Send (Int16 msgType, UnityEngine.Networking.MessageBase msg) [0x00000] in <filename unknown>:U 
+n atoaUndTime: ne.26Netwoms
+ing.NetworkClient.Send (Int16 msgType, UnityEngine.Networking.MessageBase msg) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkLobbyPlayer.SendSceneLoadedMessage () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkLobbyPlayer.OnSceneLoaded (Scene scene, LoadSceneMode mode) [0x00000] in <filename unknown>:0 
+  at (wrapper delegate-invoke) UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene, UnityEngine.SceneManagement.LoadSceneMode>:invoke_void__this___Scene_LoadSceneMode (UnityEngine.SceneManagement.Scene,U
+tUnyoadgnin1 unueed ceneManago reeduce memoryM ue)
+  at UnityOEnegin new: Sce8eM5.
+Tanal: ment.8766e7 msger.Inter a(FindLivLeObeects( 0.0286Scene sreneateObjeceteMappinmgde)0.0248000] inarfiObjelen:a0.e unknown> Dele
+te
+(Filects: 0ena427:  msLi
+n
+e: -1)
 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2b44 -> priority: 1 
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 860.
+Total: 0.723590 ms (FindLiveObjects: 0.035067 ms CreateObjectMapping: 0.024803 ms MarkObjects: 0.658159 ms  DeleteObjects: 0.005131 ms)
+
+ArgumentException: The Object you want to instantiate is null.
+  at UnityEngine.Object.CheckNullArgument (System.Object arg, System.String message) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate (UnityEngine.Object original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Object.Instantiate[GameObject] (UnityEngine.GameObject original, Vector3 position, Quaternion rotation) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkLobbyManager.SceneLoadedForPlayer (UnityEngine.Networking.NetworkConnection conn, UnityEngine.GameObject lobbyPlayerGameObject) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkLobbyManager.OnServerSceneLoadedMessage (UnityEngine.Networking.NetworkMessage netMsg) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.HandleReader (UnityEngine.Networking.NetworkReader reader, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.HandleBytes (System.Byte[] buffer, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkConnection.TransportRecieve (System.Byte[] bytes, Int32 numBytes, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.OnData (UnityEngine.Networking.NetworkConnection conn, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer+ServerSimpleWrapper.OnData (UnityEngine.Networking.NetworkConnection conn, Int32 receivedSize, Int32 channelId) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServerSimple.HandleData (Int32 connectionId, Int32 channelId, Int32 receivedSize, Byte error) [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServerSimple.Update () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.InternalUpdate () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkServer.Update () [0x00000] in <filename unknown>:0 
+  at UnityEngine.Networking.NetworkIdentity.UNetStaticUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: f44 -> priority: 1 
+  Thread -> id: f40 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: ef0 -> priority: 1 
+  Thread -> id: fa4 -> priority: 1 

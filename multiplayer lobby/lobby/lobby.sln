@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{D8671D1C-B097-A3BD-26B2-344EE25A0562}") = "lobby", "Assembly-CSharp.csproj", "{D42076B7-C9B8-DA92-2DB5-833D3EA529EB}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lobby", "Assembly-CSharp.csproj", "{D42076B7-C9B8-DA92-2DB5-833D3EA529EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
