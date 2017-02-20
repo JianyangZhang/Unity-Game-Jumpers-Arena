@@ -11,9 +11,9 @@ public class StartMenuManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		alert.SetActive(false);
-		playerNameInput.text = GameManager.instance.playerName;
-		buttons[GameManager.instance.characterIndex].onClick.Invoke();
-		buttons[GameManager.instance.characterIndex].Select();
+		playerNameInput.text = BasicPlayerInfo.instance.playerName;
+		buttons[BasicPlayerInfo.instance.characterIndex].onClick.Invoke();
+		buttons[BasicPlayerInfo.instance.characterIndex].Select();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class StartMenuManager : MonoBehaviour {
 
 	public void pressGoBtn() {
 		if (playerNameInput.text.Length > 0) {
-			GameManager.instance.playerName = playerNameInput.text;
+			BasicPlayerInfo.instance.playerName = playerNameInput.text;
 			SceneManager.LoadScene(1);
 		} else {
 			alert.SetActive(true);
@@ -35,6 +35,6 @@ public class StartMenuManager : MonoBehaviour {
 	}
 
 	public void pickCharacter(int i) {
-		GameManager.instance.characterIndex = i;
+		BasicPlayerInfo.instance.characterIndex = i;
 	}
 }
