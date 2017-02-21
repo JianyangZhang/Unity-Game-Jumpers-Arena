@@ -19,20 +19,20 @@ Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\
 Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.088 seconds
+- Completed reload, in  0.068 seconds
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 3628x1280 at -1708,-119
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.534704 ms
+UnloadTime: 2.450883 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.744528 ms
+UnloadTime: 5.009109 ms
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 689.
-Total: 1.267993 ms (FindLiveObjects: 0.068852 ms CreateObjectMapping: 0.066713 ms MarkObjects: 1.035349 ms  DeleteObjects: 0.094939 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 674.
+Total: 0.823661 ms (FindLiveObjects: 0.060726 ms CreateObjectMapping: 0.034639 ms MarkObjects: 0.644901 ms  DeleteObjects: 0.082109 ms)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
@@ -43,15 +43,14 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.677831 ms
+UnloadTime: 0.791159 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 878.
-Total: 2.126722 ms (FindLiveObjects: 0.100498 ms CreateObjectMapping: 0.067141 ms MarkObjects: 1.943686 ms  DeleteObjects: 0.014112 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 863.
+Total: 2.251169 ms (FindLiveObjects: 0.106485 ms CreateObjectMapping: 0.094511 ms MarkObjects: 2.036059 ms  DeleteObjects: 0.013684 ms)
 
 Trying to send command for object without authority.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1aa0 -> priority: 1 
+  Thread -> id: 198 -> priority: 1 
