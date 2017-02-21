@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
-	// public string id; 
+	// public string id;
 	// public Character character;
 	[SyncVar]
 	public string role;
