@@ -32,6 +32,10 @@ namespace Prototype.NetworkLobby {
 		//OnMyName function will be invoked on clients when server change the value of playerName
 		[SyncVar(hook = "OnMyName")]
 		public string playerName = "";
+		[SyncVar]
+		public string playerRole = "";
+		[SyncVar]
+		public int playerSlots = 0;
 		[SyncVar(hook = "OnMyColor")]
 		public Color playerColor = Color.white;
 
@@ -118,6 +122,30 @@ namespace Prototype.NetworkLobby {
 			if (playerName == "") {
 				// CmdNameChanged("Player" + (LobbyPlayerList._instance.playerListContentTransform.childCount - 1));
 				CmdNameChanged(BasicPlayerInfo.instance.playerName);
+			}
+			if (playerRole == "" || playerSlots == 0) {
+				switch (BasicPlayerInfo.instance.characterIndex) {
+					case 0:
+						CmdRoleChanged("ninja");
+						CmdSlotsChanged(2);
+						break;				
+					case 1:
+						CmdRoleChanged("hunter");
+						CmdSlotsChanged(3);
+						break;	
+					case 2:
+						CmdRoleChanged("enchanter");
+						CmdSlotsChanged(1);
+						break;	
+					case 3:
+						CmdRoleChanged("thief");
+						CmdSlotsChanged(2);
+						break;	
+					default:
+						CmdRoleChanged("ninja");
+						CmdSlotsChanged(2);
+						break;
+				}
 			}
 
 			//we switch from simple name display to name input
@@ -267,6 +295,14 @@ namespace Prototype.NetworkLobby {
 		[Command]
 		public void CmdNameChanged(string name) {
 			playerName = name;
+		}
+		[Command]
+		public void CmdRoleChanged(string role) {
+			playerRole = role;
+		}
+		[Command]
+		public void CmdSlotsChanged(int slots) {
+			playerSlots = slots;
 		}
 
 		//Cleanup thing when get destroy (which happen when client kick or disconnect)

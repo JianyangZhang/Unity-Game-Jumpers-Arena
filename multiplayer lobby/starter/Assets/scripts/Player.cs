@@ -5,8 +5,11 @@ using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
 	// public string id; 
+	// public Character character;
 	[SyncVar]
-	public Character character;
+	public string role;
+	[SyncVar]
+	public int slots;
 	[SyncVar]
 	public string alias;
 	[SyncVar]
@@ -56,7 +59,7 @@ public class Player : NetworkBehaviour {
 	}
 	[Command]
 	public void CmdInitializeAll() {
-		switch (BasicPlayerInfo.instance.characterIndex) {
+		/*switch (BasicPlayerInfo.instance.characterIndex) {
 			case 0:
 				character.slots = 2;
 				character.role = "ninja";
@@ -78,7 +81,7 @@ public class Player : NetworkBehaviour {
 				character.role = "ninja";
 				break;
 		}
-		// alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.alias即可
+		alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.即可*/
 		hp = 100;
 		items = null;
 		isShield = false;

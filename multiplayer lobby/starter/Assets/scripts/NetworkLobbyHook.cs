@@ -9,5 +9,7 @@ public class NetworkLobbyHook : LobbyHook {
 		Player localPlayer = gamePlayer.GetComponent<Player>();
 
 		localPlayer.alias = lobby.playerName;
+		localPlayer.role = lobby.playerRole;
+		localPlayer.slots = lobby.playerSlots;
 	}
 }
