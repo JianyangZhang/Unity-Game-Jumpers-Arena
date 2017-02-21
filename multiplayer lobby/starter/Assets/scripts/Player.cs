@@ -4,16 +4,22 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
-	// public string id; 可以用 Network.connections 返回的是NetworkPlayer[] 有toString方法
+	// public string id; 
+	[SyncVar]
 	public Character character;
+	[SyncVar]
 	public string alias;
+	[SyncVar]
 	public int hp;
 	public List<Item> items;
+	[SyncVar]
 	public bool isShield;
+	[SyncVar]
 	public bool isAccelerated;
+	[SyncVar]
 	public bool isDecelerated;
+	[SyncVar]
 	public bool isStunned;
-
 
 	public Vector2 velocity {
 		get {
@@ -36,6 +42,20 @@ public class Player : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start() {
+		CmdInitializeAll();
+	}
+
+	// Update is called once per frame
+	void Update() {
+		if (isLocalPlayer == false) {
+			return;
+		}
+		// 下面写控制
+
+
+	}
+	[Command]
+	public void CmdInitializeAll() {
 		switch (BasicPlayerInfo.instance.characterIndex) {
 			case 0:
 				character.slots = 2;
@@ -58,19 +78,12 @@ public class Player : NetworkBehaviour {
 				character.role = "ninja";
 				break;
 		}
-		alias = BasicPlayerInfo.instance.playerName;
+		// alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.alias即可
 		hp = 100;
 		items = null;
 		isShield = false;
 		isAccelerated = false;
 		isDecelerated = false;
 		isStunned = false;
-	}
-	
-	// Update is called once per frame
-	void Update() {
-		if (isLocalPlayer == false) {
-			return;
-		}
 	}
 }

@@ -68,6 +68,7 @@
      <Compile Include="Assets\scripts\Helper.cs" />
      <Compile Include="Assets\scripts\Item.cs" />
      <Compile Include="Assets\scripts\LobbySceneChange.cs" />
+     <Compile Include="Assets\scripts\NetworkLobbyHook.cs" />
      <Compile Include="Assets\scripts\Player.cs" />
      <Compile Include="Assets\scripts\StartMenuManager.cs" />
      <None Include="Assets\font\Disney\waltograph.txt" />
