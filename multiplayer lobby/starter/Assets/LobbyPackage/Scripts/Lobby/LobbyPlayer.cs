@@ -92,7 +92,7 @@ namespace Prototype.NetworkLobby {
 
 			ChangeReadyButtonColor(NotReadyColor);
 
-			readyButton.transform.GetChild(0).GetComponent<Text>().text = "...";
+			readyButton.transform.GetChild(0).GetComponent<Text>().text = "???";
 			readyButton.interactable = false;
 
 			OnClientReady(false);
@@ -157,7 +157,8 @@ namespace Prototype.NetworkLobby {
 
 				Text textComponent = readyButton.transform.GetChild(0).GetComponent<Text>();
 				textComponent.text = "READY";
-				textComponent.color = ReadyColor;
+				// textComponent.color = ReadyColor;
+				textComponent.color = Color.yellow;
 				readyButton.interactable = false;
 				colorButton.interactable = false;
 				nameInput.interactable = false;
@@ -165,7 +166,7 @@ namespace Prototype.NetworkLobby {
 				ChangeReadyButtonColor(isLocalPlayer ? JoinColor : NotReadyColor);
 
 				Text textComponent = readyButton.transform.GetChild(0).GetComponent<Text>();
-				textComponent.text = isLocalPlayer ? "JOIN" : "...";
+				textComponent.text = isLocalPlayer ? "JOIN" : "???";
 				textComponent.color = Color.white;
 				readyButton.interactable = isLocalPlayer;
 				colorButton.interactable = isLocalPlayer;

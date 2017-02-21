@@ -19,7 +19,7 @@ Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\
 Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.068 seconds
+- Completed reload, in  0.057 seconds
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -27,12 +27,38 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.450883 ms
+UnloadTime: 2.265709 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.009109 ms
+UnloadTime: 6.141536 ms
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 674.
-Total: 0.823661 ms (FindLiveObjects: 0.060726 ms CreateObjectMapping: 0.034639 ms MarkObjects: 0.644901 ms  DeleteObjects: 0.082109 ms)
+Total: 1.124729 ms (FindLiveObjects: 0.070135 ms CreateObjectMapping: 0.053029 ms MarkObjects: 0.888664 ms  DeleteObjects: 0.111189 ms)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+ClientRpc call on un-spawned object
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.514467 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 712.
+Total: 1.222662 ms (FindLiveObjects: 0.080826 ms CreateObjectMapping: 0.059443 ms MarkObjects: 1.073411 ms  DeleteObjects: 0.008125 ms)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
@@ -43,14 +69,14 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.791159 ms
+UnloadTime: 0.817246 ms
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 863.
-Total: 2.251169 ms (FindLiveObjects: 0.106485 ms CreateObjectMapping: 0.094511 ms MarkObjects: 2.036059 ms  DeleteObjects: 0.013684 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 865.
+Total: 2.002702 ms (FindLiveObjects: 0.095366 ms CreateObjectMapping: 0.064575 ms MarkObjects: 1.829930 ms  DeleteObjects: 0.011974 ms)
 
 Trying to send command for object without authority.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 198 -> priority: 1 
+  Thread -> id: 21f0 -> priority: 1 
