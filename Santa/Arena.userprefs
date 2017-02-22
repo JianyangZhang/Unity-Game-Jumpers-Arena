@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Basic\Player.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Basic\SimpleFloor.cs" Line="19" Column="1" />
+      <File FileName="Assets\Scripts\Basic\Player.cs" Line="42" Column="4" />
+      <File FileName="Assets\Scripts\Item.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Floors\FlashFloor.cs" Line="11" Column="1" />
+      <File FileName="C:\Users\Public\Documents\Unity Projects\Standard Assets Example Project\Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Basic\Bullet.cs" Line="28" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
