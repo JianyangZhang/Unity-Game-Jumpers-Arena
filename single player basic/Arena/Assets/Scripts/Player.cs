@@ -4,43 +4,43 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
-	// public string id;
-	// public Character character;
-	[SyncVar]
-	public string role;
-	[SyncVar]
-	public int slots;
-	[SyncVar]
-	public string alias;
-	[SyncVar]
-	public int hp;
-	public List<Item> items;
-	[SyncVar]
-	public bool isShield;
-	[SyncVar]
-	public bool isAccelerated;
-	[SyncVar]
-	public bool isDecelerated;
-	[SyncVar]
-	public bool isStunned;
+    // public string id;
+    // public Character character;
+    [SyncVar]
+    public string role;
+    [SyncVar]
+    public int slots;
+    [SyncVar]
+    public string alias;
+    [SyncVar]
+    public int hp;
+    public List<Item> items;
+    [SyncVar]
+    public bool isShield;
+    [SyncVar]
+    public bool isAccelerated;
+    [SyncVar]
+    public bool isDecelerated;
+    [SyncVar]
+    public bool isStunned;
 
-	public Vector2 velocity {
-		get {
-			return GetComponent<Rigidbody2D>().velocity;
-		}
-		set {
-			GetComponent<Rigidbody2D>().velocity = value;
-		}
-	}
+    public Vector2 velocity {
+        get {
+            return GetComponent<Rigidbody2D>().velocity;
+        }
+        set {
+            GetComponent<Rigidbody2D>().velocity = value;
+        }
+    }
 
-	public Vector2 location {
-		get {
-			return transform.position;
-		}
-		set {
-			transform.position = value;
-		}
-	}
+    public Vector2 location {
+        get {
+            return transform.position;
+        }
+        set {
+            transform.position = value;
+        }
+    }
 
     float speedmul;
     Vector2 movement;
@@ -52,17 +52,17 @@ public class Player : NetworkBehaviour {
 
     // Use this for initialization
     void Start() {
-		CmdInitializeAll();
+        CmdInitializeAll();
         m_RigidBody2D = GetComponent<Rigidbody2D>();
 
         speedmul = 5f;
     }
 
-	// Update is called once per frame
-	void Update() {
-		if (isLocalPlayer == false) {
-			return;
-		}
+    // Update is called once per frame
+    void Update() {
+        if (isLocalPlayer == false) {
+            return;
+        }
         // 下面写控制
         movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
 
@@ -71,10 +71,8 @@ public class Player : NetworkBehaviour {
 
     }
 
-    void FixedUpdate()
-    {
-        if (isLocalPlayer == false)
-        {
+    void FixedUpdate() {
+        if (isLocalPlayer == false) {
             return;
         }
         nowvelocity = m_RigidBody2D.velocity;
@@ -86,8 +84,8 @@ public class Player : NetworkBehaviour {
 
     }
     [Command]
-	public void CmdInitializeAll() {
-		/*switch (BasicPlayerInfo.instance.characterIndex) {
+    public void CmdInitializeAll() {
+        /*switch (BasicPlayerInfo.instance.characterIndex) {
 			case 0:
 				character.slots = 2;
 				character.role = "ninja";
@@ -110,11 +108,11 @@ public class Player : NetworkBehaviour {
 				break;
 		}
 		alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.即可*/
-		hp = 100;
-		items = null;
-		isShield = false;
-		isAccelerated = false;
-		isDecelerated = false;
-		isStunned = false;
-	}
+        hp = 100;
+        items = null;
+        isShield = false;
+        isAccelerated = false;
+        isDecelerated = false;
+        isStunned = false;
+    }
 }

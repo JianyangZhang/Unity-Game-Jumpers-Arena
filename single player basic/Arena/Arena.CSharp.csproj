@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BaseButton.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\Destroy.cs" />
@@ -86,10 +87,15 @@
     <Compile Include="Assets\Scripts\Helper.cs" />
     <Compile Include="Assets\Scripts\Helper\GameManager.cs" />
     <Compile Include="Assets\Scripts\Helper\RandomMapV2.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
+    <Compile Include="Assets\Scripts\Items\SpeedDownItem.cs" />
+    <Compile Include="Assets\Scripts\Items\SpeedUpItem.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Player1.cs" />
     <Compile Include="Assets\Scripts\Player_Control.cs" />
+    <Compile Include="Assets\Scripts\Powerups\Powerup.cs" />
+    <Compile Include="Assets\Scripts\Powerups\SpeedDown.cs" />
+    <Compile Include="Assets\Scripts\Powerups\SpeedUp.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

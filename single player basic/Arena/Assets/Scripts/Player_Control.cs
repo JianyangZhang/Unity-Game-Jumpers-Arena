@@ -5,24 +5,20 @@ using UnityEngine;
 
 
 //[RequireComponent(typeof(Onpu))]
-public class Player_Control : MonoBehaviour
-{
+public class Player_Control : MonoBehaviour {
 
     private Player m_Hero;
 
-    void Awake()
-    {
+    void Awake() {
         m_Hero = GetComponent<Player>();
     }
 
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
 
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
     }
 }
