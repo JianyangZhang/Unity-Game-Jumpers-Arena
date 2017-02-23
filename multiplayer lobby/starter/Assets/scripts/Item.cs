@@ -5,8 +5,8 @@ using UnityEngine;
 public abstract class Item {
 
     public string itemName;
-    public abstract void use(Player1 currentPlayer, List<Player1> targetPlayers);
-    public Player1 player;
+    public abstract void use(Player currentPlayer, List<Player> targetPlayers);
+    public Player player;
     public int finishTime;
     public int delay;
 

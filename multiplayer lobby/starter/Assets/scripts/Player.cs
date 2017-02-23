@@ -23,6 +23,13 @@ public class Player : NetworkBehaviour {
     public bool isDecelerated;
     [SyncVar]
     public bool isStunned;
+    
+    public Camera maincamera;
+
+    public float speedRatio = 1f;
+
+    public int time = 0;
+    public Dictionary<string, Item> timeDic = new Dictionary<string, Item>();
 
     public Vector2 velocity {
         get {
@@ -42,9 +49,21 @@ public class Player : NetworkBehaviour {
         }
     }
 
+    private void eventManager() {
+        //Player1.print(time);
+        time++;
+        foreach (string name in new List<string>(timeDic.Keys)) {
+            Item item = timeDic[name];
+            if (item.finishTime <= time) {
+                item.finish();
+                timeDic.Remove(name);
+            }
+        }
+    }
+
     float speedmul;
     Vector2 movement;
-    public Camera maincamera;
+    
 
     private Rigidbody2D m_RigidBody2D;
 
@@ -53,8 +72,9 @@ public class Player : NetworkBehaviour {
     // Use this for initialization
     void Start() {
         CmdInitializeAll();
+        maincamera = Camera.main;
         m_RigidBody2D = GetComponent<Rigidbody2D>();
-
+        items = new List<Item>();
         speedmul = 5f;
     }
 
@@ -78,7 +98,7 @@ public class Player : NetworkBehaviour {
         nowvelocity = m_RigidBody2D.velocity;
         m_RigidBody2D.velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
         m_RigidBody2D.velocity += movement;
-
+        eventManager();
         //if (nowvelocity.y > 0)
         //maincamera.transform.position += new Vector3 (0f, Mathf.Max(transform.position.y-maincamera.transform.position.y,0) ,0);
 

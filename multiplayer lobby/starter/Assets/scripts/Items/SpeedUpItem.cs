@@ -8,7 +8,7 @@ public class SpeedUpItem : Item {
 
     public float speedRatio;
 
-    public SpeedUpItem(Player1 p1) {
+    public SpeedUpItem(Player p1) {
         this.player = p1;
         // 1 second = 50 timestemps
         delay = 250;
@@ -19,7 +19,7 @@ public class SpeedUpItem : Item {
         player.speedRatio = 1;
     }
 
-    public override void use(Player1 currentPlayer, List<Player1> targetPlayers) {
+    public override void use(Player currentPlayer, List<Player> targetPlayers) {
         //SpeedDownItem.print("Speed Down Use");
         player.isAccelerated = true;
         player.isDecelerated = false;
@@ -29,7 +29,7 @@ public class SpeedUpItem : Item {
         //StartCoroutine(waitAndPrint(4f, player));
     }
 
-    IEnumerator waitAndPrint(float waitTime, Player1 player) {
+    IEnumerator waitAndPrint(float waitTime, Player player) {
         yield return new WaitForSeconds(waitTime);
         player.speedRatio = 1;
     }

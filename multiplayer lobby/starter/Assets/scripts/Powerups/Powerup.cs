@@ -15,12 +15,12 @@ public abstract class Powerup : MonoBehaviour {
 
     }
 
-    public abstract Item getItemObject(Player1 player);
+    public abstract Item getItemObject(Player player);
 
     void OnTriggerEnter2D(Collider2D e) {
         if (e.gameObject.tag.CompareTo("Player") == 0) {
             Powerup.print("meet powerup");
-            Player1 player = e.gameObject.GetComponent<Player1>();
+            Player player = e.gameObject.GetComponent<Player>();
             if (player.items.Count < player.slots) {
                 Item item = getItemObject(player);
                 int itemIndex = player.items.Count;

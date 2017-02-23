@@ -60,7 +60,7 @@ public class Player1 : MonoBehaviour {
     Vector2 nowvelocity;
 
     // Use this for initialization
-    void Start() {
+    void Start() {        
         items = new List<Item>();
         //Initialize Module Linking
         m_RigidBody2D = GetComponent<Rigidbody2D>();

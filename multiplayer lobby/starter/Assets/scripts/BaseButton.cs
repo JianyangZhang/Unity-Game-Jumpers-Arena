@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class BaseButton : MonoBehaviour {
-    Player1 player;
+    Player player;
     //bug
     int itemIndex;
     Item item;
@@ -20,7 +20,7 @@ public class BaseButton : MonoBehaviour {
         }
     }
 
-    public void setParam(Player1 player, int index, Item item) {
+    public void setParam(Player player, int index, Item item) {
         if (!isValid) {
             isValid = true;
             this.player = player;

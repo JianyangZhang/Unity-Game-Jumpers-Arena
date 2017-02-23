@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpeedUp : Powerup {
 
-    public override Item getItemObject(Player1 player) {
+    public override Item getItemObject(Player player) {
         SpeedUp.print("generate SpeedUp Item");
         Item item = new SpeedUpItem(player);
         return item;
