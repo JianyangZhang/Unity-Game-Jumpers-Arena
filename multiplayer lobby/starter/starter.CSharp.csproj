@@ -87,18 +87,31 @@
     <Compile Include="Assets\LobbyPackage\Scripts\Lobby\LobbyServerEntry.cs" />
     <Compile Include="Assets\LobbyPackage\Scripts\Lobby\LobbyServerList.cs" />
     <Compile Include="Assets\LobbyPackage\Scripts\Lobby\LobbyTopPanel.cs" />
+    <Compile Include="Assets\scripts\BaseButton.cs" />
     <Compile Include="Assets\scripts\BasicController.cs" />
     <Compile Include="Assets\scripts\BasicPlayerInfo.cs" />
     <Compile Include="Assets\scripts\Bullet.cs" />
     <Compile Include="Assets\scripts\Character.cs" />
     <Compile Include="Assets\scripts\Destroy.cs" />
     <Compile Include="Assets\scripts\Enemy.cs" />
+    <Compile Include="Assets\scripts\Floors\FinishFloor.cs" />
+    <Compile Include="Assets\scripts\Floors\FlashFloor.cs" />
+    <Compile Include="Assets\scripts\Floors\MovingFloor.cs" />
+    <Compile Include="Assets\scripts\Floors\SimpleFloor.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\Helper.cs" />
+    <Compile Include="Assets\scripts\Helper\RandomMapV2.cs" />
     <Compile Include="Assets\scripts\Item.cs" />
+    <Compile Include="Assets\scripts\Items\SpeedDownItem.cs" />
+    <Compile Include="Assets\scripts\Items\SpeedUpItem.cs" />
     <Compile Include="Assets\scripts\LobbySceneChange.cs" />
     <Compile Include="Assets\scripts\NetworkLobbyHook.cs" />
     <Compile Include="Assets\scripts\Player.cs" />
+    <Compile Include="Assets\scripts\Player1.cs" />
+    <Compile Include="Assets\scripts\Player_Control.cs" />
+    <Compile Include="Assets\scripts\Powerups\Powerup.cs" />
+    <Compile Include="Assets\scripts\Powerups\SpeedDown.cs" />
+    <Compile Include="Assets\scripts\Powerups\SpeedUp.cs" />
     <Compile Include="Assets\scripts\StartMenuManager.cs" />
   </ItemGroup>
   <ItemGroup>

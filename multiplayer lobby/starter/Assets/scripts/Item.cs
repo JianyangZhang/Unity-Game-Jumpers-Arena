@@ -2,13 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : MonoBehaviour {
+public abstract class Item {
 
     public string itemName;
-    public abstract void use(Player currentPlayer, List<Player> targetPlayers);
+    public abstract void use(Player1 currentPlayer, List<Player1> targetPlayers);
+    public Player1 player;
+    public int finishTime;
+    public int delay;
 
-	// Use this for initialization
-	void Start () {
+    public abstract void finish();
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
