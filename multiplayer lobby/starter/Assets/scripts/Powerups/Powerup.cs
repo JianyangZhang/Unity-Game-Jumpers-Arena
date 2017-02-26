@@ -15,7 +15,8 @@ public abstract class Powerup : MonoBehaviour {
 
     }
 
-    public abstract Item getItemObject(Player player);
+    //public abstract Item getItemObject(Player player);
+    public abstract string getItemObject();
 
     void OnTriggerEnter2D(Collider2D e) {
         if (e.gameObject.tag.CompareTo("Player") == 0) {
@@ -23,7 +24,8 @@ public abstract class Powerup : MonoBehaviour {
             Player player = e.gameObject.GetComponent<Player>();
             Powerup.print(player.alias);
             if (player.isLocalPlayer && player.items.Count < player.slots) {
-                Item item = getItemObject(player);
+                //Item item = getItemObject(player);
+                string item = getItemObject();
                 int itemIndex = player.items.Count;
                 player.items.Add(item);
                 //item.use(null, null);

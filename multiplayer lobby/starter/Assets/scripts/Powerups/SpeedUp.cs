@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class SpeedUp : Powerup {
 
-    public override Item getItemObject(Player player) {
+    //public override Item getItemObject(Player player) {
+    //    SpeedUp.print("generate SpeedUp Item");
+    //    Item item = new SpeedUpItem(player);
+    //    return item;
+    //}
+
+    public override string getItemObject()
+    {
         SpeedUp.print("generate SpeedUp Item");
-        Item item = new SpeedUpItem(player);
-        return item;
+        return "SpeedUpItem";
     }
 
     // Use this for initialization

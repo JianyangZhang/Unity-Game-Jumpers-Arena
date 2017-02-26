@@ -14,8 +14,9 @@ public class Player : NetworkBehaviour {
     public string alias;
     [SyncVar]
     public int hp;
-    
-    public List<Item> items;
+
+    public List<string> items;
+    //public List<Item> items;
     [SyncVar]
     public bool isShield;
     [SyncVar]
@@ -26,11 +27,11 @@ public class Player : NetworkBehaviour {
     public bool isStunned;
     
     public Camera maincamera;
-
+    [SyncVar]
     public float speedRatio = 1f;
 
     public int time = 0;
-    public Dictionary<string, Item> timeDic = new Dictionary<string, Item>();
+    public Dictionary<string, EventBean> timeDic = new Dictionary<string, EventBean>();
     public Sprite[] sprites;
 
     public Vector2 velocity {
@@ -51,13 +52,22 @@ public class Player : NetworkBehaviour {
         }
     }
 
+    [ClientRpc]
+    public void RpcAddEvent(string key, EventBean item) {
+        Player.print("add Event");
+        timeDic[key] = item;
+    }
+
     private void eventManager() {
         //Player1.print(time);
         time++;
         foreach (string name in new List<string>(timeDic.Keys)) {
-            Item item = timeDic[name];
+            //Item item = timeDic[name];
+            EventBean item = timeDic[name];
             if (item.finishTime <= time) {
-                item.finish();
+                //item.finish();
+                Player.print("finish " + item.itemName);
+                Item.finish(item.itemName, this);
                 timeDic.Remove(name);
             }
         }
@@ -73,10 +83,19 @@ public class Player : NetworkBehaviour {
 
     // Use this for initialization
     void Start() {
+        SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
+        if (role == "ninja")
+            spriteRenderer.sprite = sprites[0];
+        else if (role == "hunter")
+            spriteRenderer.sprite = sprites[1];
+        else if (role == "enchanter")
+            spriteRenderer.sprite = sprites[2];
+        else if (role == "thief")
+            spriteRenderer.sprite = sprites[3];
         CmdInitializeAll();
         maincamera = Camera.main;
         m_RigidBody2D = GetComponent<Rigidbody2D>();
-        items = new List<Item>();
+        items = new List<string>();
         speedmul = 5f;
     }
 
@@ -142,15 +161,7 @@ public class Player : NetworkBehaviour {
 				break;
 		}
 		alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.即可*/
-        SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
-        if (role == "ninja")
-            spriteRenderer.sprite = sprites[0];
-        else if (role == "hunter")
-            spriteRenderer.sprite = sprites[1];
-        else if (role == "enchanter")
-            spriteRenderer.sprite = sprites[2];
-        else if (role == "thief")
-            spriteRenderer.sprite = sprites[3];
+        
         hp = 100;
         items = null;
         isShield = false;

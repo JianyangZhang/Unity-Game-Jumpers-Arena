@@ -72,7 +72,8 @@
      <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\Helper.cs" />
      <Compile Include="Assets\scripts\Helper\RandomMapV2.cs" />
-     <Compile Include="Assets\scripts\Item.cs" />
+     <Compile Include="Assets\scripts\Items\EventBean.cs" />
+     <Compile Include="Assets\scripts\Items\Item.cs" />
      <Compile Include="Assets\scripts\Items\SpeedDownItem.cs" />
      <Compile Include="Assets\scripts\Items\SpeedUpItem.cs" />
      <Compile Include="Assets\scripts\LobbySceneChange.cs" />
