@@ -31,6 +31,7 @@ public class Player : NetworkBehaviour {
 
     public int time = 0;
     public Dictionary<string, Item> timeDic = new Dictionary<string, Item>();
+    public Sprite[] sprites;
 
     public Vector2 velocity {
         get {
@@ -141,6 +142,15 @@ public class Player : NetworkBehaviour {
 				break;
 		}
 		alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.即可*/
+        SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
+        if (role == "ninja")
+            spriteRenderer.sprite = sprites[0];
+        else if (role == "hunter")
+            spriteRenderer.sprite = sprites[1];
+        else if (role == "enchanter")
+            spriteRenderer.sprite = sprites[2];
+        else if (role == "thief")
+            spriteRenderer.sprite = sprites[3];
         hp = 100;
         items = null;
         isShield = false;
