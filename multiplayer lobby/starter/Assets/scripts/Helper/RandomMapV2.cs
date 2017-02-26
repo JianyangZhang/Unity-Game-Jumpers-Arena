@@ -66,7 +66,7 @@ public class RandomMapV2 : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-
+        Random.InitState(1234567);
         FloorMapSetting fms = new FloorMapSetting();
         float currentheight = 0;
         floorlist = new List<Object>();
@@ -92,7 +92,7 @@ public class RandomMapV2 : MonoBehaviour {
             }
 
             while (currentheight > fms.blocks[pBlock].endpoint) pBlock += 1;
-
+            
             for (int iSlice = 0; iSlice < fms.blocks[pBlock].quantityOfSlice; iSlice++) {
                 float dice = Random.Range(0f, 1f);
                 int rtype = 0;

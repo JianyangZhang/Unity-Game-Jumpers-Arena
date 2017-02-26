@@ -21,6 +21,8 @@ public class SpeedDownItem : Item {
 
     public override void use(Player currentPlayer, List<Player> targetPlayers) {
         //SpeedDownItem.print("Speed Down Use");
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        Player.print(players.Length);
         player.isAccelerated = false;
         player.isDecelerated = true;
         finishTime = player.time + delay;
@@ -33,14 +35,4 @@ public class SpeedDownItem : Item {
         yield return new WaitForSeconds(waitTime);
         player.speedRatio = 1;
     }
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

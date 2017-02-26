@@ -14,6 +14,7 @@ public class Player : NetworkBehaviour {
     public string alias;
     [SyncVar]
     public int hp;
+    
     public List<Item> items;
     [SyncVar]
     public bool isShield;
@@ -83,6 +84,7 @@ public class Player : NetworkBehaviour {
         if (isLocalPlayer == false) {
             return;
         }
+        //Player.print(this.alias);
         // 下面写控制
         movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
 
@@ -103,6 +105,17 @@ public class Player : NetworkBehaviour {
         //maincamera.transform.position += new Vector3 (0f, Mathf.Max(transform.position.y-maincamera.transform.position.y,0) ,0);
 
     }
+
+    //[ClientRpc]
+    //public int CmdCountItemlist() {
+    //    return items.Count;
+    //}
+
+    //[ClientRpc]
+    //public void CmdaddItem(Item item) {
+    //    items.Add(item);
+    //}
+
     [Command]
     public void CmdInitializeAll() {
         /*switch (BasicPlayerInfo.instance.characterIndex) {
