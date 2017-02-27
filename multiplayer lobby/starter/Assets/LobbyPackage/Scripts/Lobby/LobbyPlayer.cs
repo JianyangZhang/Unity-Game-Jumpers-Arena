@@ -28,16 +28,18 @@ namespace Prototype.NetworkLobby {
 
 		public GameObject localIcone;
 		public GameObject remoteIcone;
+		public Text role;
 
 		//OnMyName function will be invoked on clients when server change the value of playerName
 		[SyncVar(hook = "OnMyName")]
 		public string playerName = "";
-		[SyncVar]
+		[SyncVar(hook="OnMyRole")]
 		public string playerRole = "";
 		[SyncVar]
 		public int playerSlots = 0;
 		[SyncVar(hook = "OnMyColor")]
 		public Color playerColor = Color.white;
+
 
 		public Color OddRowColor = new Color(250.0f / 255.0f, 250.0f / 255.0f, 250.0f / 255.0f, 1.0f);
 		public Color EvenRowColor = new Color(180.0f / 255.0f, 180.0f / 255.0f, 180.0f / 255.0f, 1.0f);
@@ -70,6 +72,7 @@ namespace Prototype.NetworkLobby {
 			//will be created with the right value currently on server
 			OnMyName(playerName);
 			OnMyColor(playerColor);
+			OnMyRole(playerRole);
 		}
 
 		public override void OnStartAuthority() {
@@ -127,22 +130,27 @@ namespace Prototype.NetworkLobby {
 				switch (BasicPlayerInfo.instance.characterIndex) {
 					case 0:
 						CmdRoleChanged("ninja");
+						CmdRoleTextChange("ninja");
 						CmdSlotsChanged(2);
 						break;				
 					case 1:
 						CmdRoleChanged("hunter");
+						CmdRoleTextChange("hunter");
 						CmdSlotsChanged(3);
 						break;	
 					case 2:
 						CmdRoleChanged("enchanter");
+						CmdRoleTextChange("enchanter");
 						CmdSlotsChanged(1);
 						break;	
 					case 3:
 						CmdRoleChanged("thief");
+						CmdRoleTextChange("thief");
 						CmdSlotsChanged(2);
 						break;	
 					default:
 						CmdRoleChanged("ninja");
+						CmdRoleTextChange("ninja");
 						CmdSlotsChanged(2);
 						break;
 				}
@@ -216,6 +224,15 @@ namespace Prototype.NetworkLobby {
 		public void OnMyColor(Color newColor) {
 			playerColor = newColor;
 			colorButton.GetComponent<Image>().color = newColor;
+		}
+
+		public void OnMyRole(string role) {
+			if (role.Equals("enchanter")) {
+				this.role.fontSize = 20;
+			} else {
+				this.role.fontSize = 26;
+			}
+			this.role.text = role;
 		}
 
 		//===== UI Handler
@@ -296,10 +313,18 @@ namespace Prototype.NetworkLobby {
 		public void CmdNameChanged(string name) {
 			playerName = name;
 		}
+
 		[Command]
 		public void CmdRoleChanged(string role) {
 			playerRole = role;
+
 		}
+
+		[Command]
+		public void CmdRoleTextChange(string role) {
+
+		}
+
 		[Command]
 		public void CmdSlotsChanged(int slots) {
 			playerSlots = slots;
