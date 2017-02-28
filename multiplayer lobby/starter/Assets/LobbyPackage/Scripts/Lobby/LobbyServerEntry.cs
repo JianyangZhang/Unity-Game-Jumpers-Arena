@@ -14,8 +14,12 @@ namespace Prototype.NetworkLobby
         public Button joinButton;
 
 		public void Populate(MatchInfoSnapshot match, LobbyManager lobbyManager, Color c)
-		{
-            serverInfoText.text = match.name;
+		{	
+			if (match.name == "") {
+				serverInfoText.text = "DEFAULT ROOM";
+			} else {
+				serverInfoText.text = match.name;
+			}
 
             slotInfo.text = match.currentSize.ToString() + "/" + match.maxSize.ToString(); ;
 
