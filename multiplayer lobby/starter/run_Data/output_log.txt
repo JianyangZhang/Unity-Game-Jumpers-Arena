@@ -1,0 +1,402 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   10.18.15.4278
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.055 seconds
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   10.18.15.4278
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.055 seconds
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+UnloadTime: 2.280677 ms
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+    Driver:   10.18.15.4278
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.046 seconds
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.239195 ms
+<RI> Initialized touch support.
+UnloadTime: 2.196429 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.474814 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 1.294080 ms (FindLiveObjects: 0.071845 ms CreateObjectMapping: 0.047041 ms MarkObjects: 1.069989 ms  DeleteObjects: 0.104347 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.997416 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 0.893368 ms (FindLiveObjects: 0.068424 ms CreateObjectMapping: 0.038061 ms MarkObjects: 0.706484 ms  DeleteObjects: 0.079543 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.602119 ms
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 3.297210 ms (FindLiveObjects: 0.211260 ms CreateObjectMapping: 0.158231 ms MarkObjects: 2.743399 ms  DeleteObjects: 0.180469 ms)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient ListMatches :https://mm.unet.unity3d.com/json/reply/ListMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+MatchMakingClient Join :https://mm.unet.unity3d.com/json/reply/JoinMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.790731 ms
+UnloadTime: 0.806555 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.609834 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 3.685948 ms (FindLiveObjects: 0.442621 ms CreateObjectMapping: 0.152244 ms MarkObjects: 3.062001 ms  DeleteObjects: 0.019244 ms)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2564.
+Total: 2.709614 ms (FindLiveObjects: 0.232643 ms CreateObjectMapping: 0.089379 ms MarkObjects: 2.372623 ms  DeleteObjects: 0.014540 ms)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2582.
+Total: 8.808385 ms (FindLiveObjects: 0.703490 ms CreateObjectMapping: 0.112900 ms MarkObjects: 7.973605 ms  DeleteObjects: 0.017106 ms)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to send command for object without authority.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2d38 -> priority: 1 
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3218 -> priority: 1 
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 35d8 -> priority: 1 

@@ -75,12 +75,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Destroy.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\MovingFloor.cs" />
     <Compile Include="Assets\Scripts\Onpu.cs" />
     <Compile Include="Assets\Scripts\RandomMap.cs" />
     <Compile Include="Assets\Scripts\SimpleFloor.cs" />
+=======
+    <Compile Include="Assets\MovingFloor.cs" />
+    <Compile Include="Assets\Onpu.cs" />
+    <Compile Include="Assets\RandomMap.cs" />
+    <Compile Include="Assets\SimpleFloor.cs" />
+>>>>>>> remotes/origin/master
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
