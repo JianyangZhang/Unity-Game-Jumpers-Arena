@@ -17,7 +17,7 @@ Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\
 Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.115 seconds
+- Completed reload, in  0.048 seconds
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\GitHub\Unity-Game-Jumpers-Arena\multiplayer lobby\starter\run_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -25,12 +25,16 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.571909 ms
+UnloadTime: 2.733563 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.764208 ms
+UnloadTime: 5.167768 ms
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 699.
-Total: 0.856590 ms (FindLiveObjects: 0.059016 ms CreateObjectMapping: 0.035922 ms MarkObjects: 0.675265 ms  DeleteObjects: 0.085103 ms)
+Total: 1.017388 ms (FindLiveObjects: 0.075694 ms CreateObjectMapping: 0.045758 ms MarkObjects: 0.783889 ms  DeleteObjects: 0.111189 ms)
+
+MatchMakingClient Create :https://mm.unet.unity3d.com/json/reply/CreateMatchRequest
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
@@ -41,12 +45,20 @@ DontDestroyOnLoad only work for root GameObjects or components on root GameObjec
 (Filename:  Line: 447)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.602136 ms
+UnloadTime: 0.631217 ms
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2471.
-Total: 3.365635 ms (FindLiveObjects: 0.263007 ms CreateObjectMapping: 0.105630 ms MarkObjects: 2.979464 ms  DeleteObjects: 0.017106 ms)
 
-Trying to send command for object without authority.
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 2481.
+Total: 3.463140 ms (FindLiveObjects: 0.275836 ms CreateObjectMapping: 0.092800 ms MarkObjects: 3.074830 ms  DeleteObjects: 0.018389 ms)
+
+15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+15
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -71,4 +83,4 @@ Trying to send command for object without authority.
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2698 -> priority: 1 
+  Thread -> id: 34a8 -> priority: 1 
