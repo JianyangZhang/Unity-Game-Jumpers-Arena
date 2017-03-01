@@ -20,6 +20,10 @@ public static class SpeedDownItem {
         player.speedRatio = 1;
     }
 
+    public static void execute(Player currentPlayer) {
+        currentPlayer.speedRatio = speedRatio;
+    }
+
     public static void use(Player currentPlayer, List<Player> targetPlayers) {
         //SpeedDownItem.print("Speed Down Use");
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
@@ -31,13 +35,22 @@ public static class SpeedDownItem {
         EventBean bean = new EventBean();
         bean.finishTime = finishTime;
         bean.itemName = "SpeedDownItem";
+        bean.className = "speed";
         //currentPlayer.timeDic["speed"] = bean;
         //currentPlayer.RpcAddEvent("speed", bean);
         foreach (Player player in targetPlayers) {
+            Player.print(player.netId);
+            Player.print(currentPlayer.netId);
             if (player.netId != currentPlayer.netId) {
                 Player.print("apply speedDown, current: " + currentPlayer.netId + "player id:" + player.netId);
-                player.speedRatio = speedRatio;
-                player.RpcAddEvent("speed", bean);
+                //player.speedRatio = speedRatio;
+                bean.id = player.netId;
+                if (currentPlayer.isClient)
+                    currentPlayer.CmdAddTask(bean);
+                else
+                    currentPlayer.tasksList.Add(bean);
+                //currentPlayer.tasksList.Add(bean);
+                //player.RpcAddEvent("speed", bean);
             }
         }
         //StartCoroutine(waitAndPrint(4f, player));

@@ -43,6 +43,14 @@ public static class Item {
         }
     }
 
+    public static void execute(string itemName, Player currentPlayer) {
+        if (itemName == "SpeedDownItem") {
+            SpeedDownItem.execute(currentPlayer);
+        } else if (itemName == "SpeedUpItem") {
+            SpeedUpItem.execute(currentPlayer);
+        }
+    }
+
     public static void finish(string itemName, Player currentPlayer) {
         if (itemName == "SpeedDownItem") {
             SpeedDownItem.finish(currentPlayer);

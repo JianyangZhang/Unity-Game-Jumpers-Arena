@@ -20,6 +20,10 @@ public static class SpeedUpItem {
         player.speedRatio = 1;
     }
 
+    public static void execute(Player currentPlayer) {
+        currentPlayer.speedRatio = speedRatio;
+    }
+
     public static void use(Player currentPlayer, List<Player> targetPlayers) {
         //SpeedDownItem.print("Speed Down Use");
         currentPlayer.isAccelerated = true;
@@ -28,10 +32,16 @@ public static class SpeedUpItem {
         EventBean bean = new EventBean();
         bean.finishTime = finishTime;
         bean.itemName = "SpeedUpItem";
-        currentPlayer.speedRatio = speedRatio;
+        bean.className = "speed";
+        bean.id = currentPlayer.netId;
+        Player.print("Speed Up Item " + bean.id);
+        //currentPlayer.speedRatio = speedRatio;
         //currentPlayer.timeDic["speed"] = bean;
-
-        currentPlayer.RpcAddEvent("speed", bean);
+        if (currentPlayer.isClient)
+            currentPlayer.CmdAddTask(bean);
+        else
+            currentPlayer.tasksList.Add(bean);
+        //currentPlayer.RpcAddEvent("speed", bean);
         //StartCoroutine(waitAndPrint(4f, player));
     }
 

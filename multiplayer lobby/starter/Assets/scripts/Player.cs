@@ -31,8 +31,17 @@ public class Player : NetworkBehaviour {
     public float speedRatio = 1f;
 
     public int time = 0;
+    [SyncVar]
+    public SyncListEventBean tasksList = new SyncListEventBean();
+    [SyncVar]
+    public SyncListEventBean timeList = new SyncListEventBean();
     public Dictionary<string, EventBean> timeDic = new Dictionary<string, EventBean>();
     public Sprite[] sprites;
+    private int listIndex = 0;
+
+    
+    private Dictionary<NetworkInstanceId, Player> playerDic;
+    private List<Player> players;
 
     public Vector2 velocity {
         get {
@@ -51,15 +60,53 @@ public class Player : NetworkBehaviour {
             transform.position = value;
         }
     }
-
-    [ClientRpc]
-    public void RpcAddEvent(string key, EventBean item) {
-        Player.print("add Event");
-        timeDic[key] = item;
+    [Server]
+    public void initPlayers() {
+        //yield return new WaitForSeconds(2);
+        playerDic = new Dictionary<NetworkInstanceId, Player>();
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        Player.print(objs.Length + "player objs" + this.netId);
+        players = new List<Player>();
+        foreach (GameObject gameObj in objs) {
+            Player p = gameObj.GetComponent<Player>();
+            playerDic[p.netId] = p;
+            players.Add(p);
+        }
     }
 
+    [Server]
+    public void taskManager() {
+        if (!isServer)
+            return;
+        if (time % 100 == 0)
+            initPlayers();
+        if (players == null)
+            return;
+        //initPlayers();
+        foreach (Player p in players) {
+            if (p.tasksList.Count > 0) {
+                foreach (EventBean e in p.tasksList) {
+                    Player target = playerDic[e.id];
+                    target.timeList.Add(e);
+                }
+                p.tasksList.Clear();
+            }
+        }
+    }
+
+    [Command]
+    public void CmdAddTask(EventBean e) {
+        tasksList.Add(e);
+    }
+    
     private void eventManager() {
         //Player1.print(time);
+        if (timeList.Count > listIndex) {
+            for (; listIndex < timeList.Count; listIndex++) {
+                timeDic[timeList[listIndex].className] = timeList[listIndex];
+                Item.execute(timeList[listIndex].itemName, this);
+            }
+        }
         time++;
         foreach (string name in new List<string>(timeDic.Keys)) {
             //Item item = timeDic[name];
@@ -83,6 +130,7 @@ public class Player : NetworkBehaviour {
 
     // Use this for initialization
     void Start() {
+        //StartCoroutine(initPlayers());
         SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
         if (role == "ninja")
             spriteRenderer.sprite = sprites[0];
@@ -97,6 +145,7 @@ public class Player : NetworkBehaviour {
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         items = new List<string>();
         speedmul = 5f;
+        initPlayers();
     }
 
     // Update is called once per frame
@@ -114,6 +163,7 @@ public class Player : NetworkBehaviour {
     }
 
     void FixedUpdate() {
+        taskManager();
         if (isLocalPlayer == false) {
             return;
         }
