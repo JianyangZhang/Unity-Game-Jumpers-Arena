@@ -9,18 +9,19 @@ public class StartMenuManager : MonoBehaviour {
 	public InputField playerNameInput;
 	public Button[] buttons;
 	public GameObject alert;
+	public UnityArmatureComponent armatureComponent = null;
 	// Use this for initialization
 	void Start () {
 		alert.SetActive(false);
 		playerNameInput.text = BasicPlayerInfo.instance.playerName;
 		buttons[BasicPlayerInfo.instance.characterIndex].onClick.Invoke();
 		buttons[BasicPlayerInfo.instance.characterIndex].Select();
-		//UnityFactory.factory.LoadDragonBonesData ("MarvinCat/MarvinCat_ske");
-		//UnityFactory.factory.LoadTextureAtlasData ("MarvinCat/MarvinCat_tex");
-		//var armatureComponent = UnityFactory.factory.BuildArmatureComponent ("MarvinCat");
-		//armatureComponent.animation.Play ("JumpBlink");
-		//armatureComponent.transform.localPosition = new Vector3 (250.0f, 500.0f, 0.0f);
-		//armatureComponent.transform.localScale =  new Vector3(30.0f, 30.0f, 0.2f);
+		UnityFactory.factory.LoadDragonBonesData ("MarvinCat/MarvinCat_ske");
+		UnityFactory.factory.LoadTextureAtlasData ("MarvinCat/MarvinCat_tex");
+		armatureComponent = UnityFactory.factory.BuildArmatureComponent ("MarvinCat");
+		armatureComponent.animation.Play ("JumpBlink",2);
+		armatureComponent.transform.localPosition = new Vector3 (0.0f, 0.0f, 0.0f);
+		armatureComponent.transform.localScale =  new Vector3(0.2f, 0.2f, 2.0f);
 	}
 	
 	// Update is called once per frame
@@ -43,5 +44,8 @@ public class StartMenuManager : MonoBehaviour {
 
 	public void pickCharacter(int i) {
 		BasicPlayerInfo.instance.characterIndex = i;
+		if (armatureComponent) {
+			armatureComponent.animation.Play ("HeadBlink", 1);
+		}
 	}
 }
