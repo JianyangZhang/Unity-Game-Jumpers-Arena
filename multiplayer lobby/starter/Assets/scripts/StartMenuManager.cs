@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DragonBones;
 
 public class StartMenuManager : MonoBehaviour {
 	public InputField playerNameInput;
@@ -14,6 +15,12 @@ public class StartMenuManager : MonoBehaviour {
 		playerNameInput.text = BasicPlayerInfo.instance.playerName;
 		buttons[BasicPlayerInfo.instance.characterIndex].onClick.Invoke();
 		buttons[BasicPlayerInfo.instance.characterIndex].Select();
+		//UnityFactory.factory.LoadDragonBonesData ("MarvinCat/MarvinCat_ske");
+		//UnityFactory.factory.LoadTextureAtlasData ("MarvinCat/MarvinCat_tex");
+		//var armatureComponent = UnityFactory.factory.BuildArmatureComponent ("MarvinCat");
+		//armatureComponent.animation.Play ("JumpBlink");
+		//armatureComponent.transform.localPosition = new Vector3 (250.0f, 500.0f, 0.0f);
+		//armatureComponent.transform.localScale =  new Vector3(30.0f, 30.0f, 0.2f);
 	}
 	
 	// Update is called once per frame

@@ -1,0 +1,125 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-r:"H:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll"
+-r:"H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:"H:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_0
+-define:UNITY_5_5
+-define:UNITY_5
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+Assets/LobbyPackage/Scripts/DraggablePanel.cs
+Assets/LobbyPackage/Scripts/EventSystemChecker.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyCountdownPanel.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyHook.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyInfoPanel.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyMainMenu.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyManager.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyPlayer.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyPlayerList.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyServerEntry.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyServerList.cs
+Assets/LobbyPackage/Scripts/Lobby/LobbyTopPanel.cs
+Assets/scripts/BaseButton.cs
+Assets/scripts/BasicController.cs
+Assets/scripts/BasicPlayerInfo.cs
+Assets/scripts/Bullet.cs
+Assets/scripts/Character.cs
+Assets/scripts/Destroy.cs
+Assets/scripts/Enemy.cs
+Assets/scripts/Floors/FinishFloor.cs
+Assets/scripts/Floors/FlashFloor.cs
+Assets/scripts/Floors/MovingFloor.cs
+Assets/scripts/Floors/SimpleFloor.cs
+Assets/scripts/GameManager.cs
+Assets/scripts/Helper.cs
+Assets/scripts/Helper/RandomMapV2.cs
+Assets/scripts/Items/EventBean.cs
+Assets/scripts/Items/Item.cs
+Assets/scripts/Items/SpeedDownItem.cs
+Assets/scripts/Items/SpeedUpItem.cs
+Assets/scripts/LobbySceneChange.cs
+Assets/scripts/NetworkLobbyHook.cs
+Assets/scripts/Player.cs
+Assets/scripts/Player1.cs
+Assets/scripts/Player_Control.cs
+Assets/scripts/Powerups/Powerup.cs
+Assets/scripts/Powerups/SpeedDown.cs
+Assets/scripts/Powerups/SpeedUp.cs
+Assets/scripts/StartMenuManager.cs
+-r:"H:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"H:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"H:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"H:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"H:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

@@ -39,10 +39,10 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>H:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>H:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +64,37 @@
      <Compile Include="Assets\scripts\Bullet.cs" />
      <Compile Include="Assets\scripts\Character.cs" />
      <Compile Include="Assets\scripts\Destroy.cs" />
+     <Compile Include="Assets\scripts\DragonBones\animation\Animation.cs" />
+     <Compile Include="Assets\scripts\DragonBones\animation\AnimationState.cs" />
+     <Compile Include="Assets\scripts\DragonBones\animation\BaseTimelineState.cs" />
+     <Compile Include="Assets\scripts\DragonBones\animation\IAnimateble.cs" />
+     <Compile Include="Assets\scripts\DragonBones\animation\TimelineState.cs" />
+     <Compile Include="Assets\scripts\DragonBones\animation\WorldClock.cs" />
+     <Compile Include="Assets\scripts\DragonBones\armature\Armature.cs" />
+     <Compile Include="Assets\scripts\DragonBones\armature\Bone.cs" />
+     <Compile Include="Assets\scripts\DragonBones\armature\IArmatureProxy.cs" />
+     <Compile Include="Assets\scripts\DragonBones\armature\Slot.cs" />
+     <Compile Include="Assets\scripts\DragonBones\armature\TransformObject.cs" />
+     <Compile Include="Assets\scripts\DragonBones\core\BaseObject.cs" />
+     <Compile Include="Assets\scripts\DragonBones\core\DragonBones.cs" />
+     <Compile Include="Assets\scripts\DragonBones\event\EventObject.cs" />
+     <Compile Include="Assets\scripts\DragonBones\event\IEventDispatcher.cs" />
+     <Compile Include="Assets\scripts\DragonBones\factory\BaseFactory.cs" />
+     <Compile Include="Assets\scripts\DragonBones\geom\Geom.cs" />
+     <Compile Include="Assets\scripts\DragonBones\model\AnimationConfig.cs" />
+     <Compile Include="Assets\scripts\DragonBones\model\AnimationData.cs" />
+     <Compile Include="Assets\scripts\DragonBones\model\ArmatureData.cs" />
+     <Compile Include="Assets\scripts\DragonBones\model\DragonBonesData.cs" />
+     <Compile Include="Assets\scripts\DragonBones\model\FrameData.cs" />
+     <Compile Include="Assets\scripts\DragonBones\model\TimelineData.cs" />
+     <Compile Include="Assets\scripts\DragonBones\parser\DataParser.cs" />
+     <Compile Include="Assets\scripts\DragonBones\parser\ObjectDataParser.cs" />
+     <Compile Include="Assets\scripts\DragonBones\texture\TextureData.cs" />
+     <Compile Include="Assets\scripts\DragonBones\unity\UnityArmatureComponent.cs" />
+     <Compile Include="Assets\scripts\DragonBones\unity\UnityEventDispatcher.cs" />
+     <Compile Include="Assets\scripts\DragonBones\unity\UnityFactory.cs" />
+     <Compile Include="Assets\scripts\DragonBones\unity\UnitySlot.cs" />
+     <Compile Include="Assets\scripts\DragonBones\unity\UnityTextureData.cs" />
      <Compile Include="Assets\scripts\Enemy.cs" />
      <Compile Include="Assets\scripts\Floors\FinishFloor.cs" />
      <Compile Include="Assets\scripts\Floors\FlashFloor.cs" />
@@ -77,6 +108,7 @@
      <Compile Include="Assets\scripts\Items\SpeedDownItem.cs" />
      <Compile Include="Assets\scripts\Items\SpeedUpItem.cs" />
      <Compile Include="Assets\scripts\LobbySceneChange.cs" />
+     <Compile Include="Assets\scripts\MiniJSON.cs" />
      <Compile Include="Assets\scripts\NetworkLobbyHook.cs" />
      <Compile Include="Assets\scripts\Player.cs" />
      <Compile Include="Assets\scripts\Player1.cs" />
@@ -89,41 +121,23 @@
      <None Include="Assets\font\Komika\Komika.txt" />
      <None Include="Assets\font\OpenSans\License!.txt" />
      <None Include="Assets\font\Disney\license.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.PlaymodeTestsRunner">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ <HintPath>H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ <HintPath>H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll</HintPath>
+ <HintPath>H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.VR">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
- </Reference>
- <Reference Include="Mono.Cecil">
- <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Xcode">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions.Common">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ <HintPath>H:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
