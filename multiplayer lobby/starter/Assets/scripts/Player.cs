@@ -130,6 +130,10 @@ public class Player : NetworkBehaviour {
 
     // Use this for initialization
     void Start() {
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        Player.print("width:" + min.x + " , " + max.x);
+        Player.print("height:" + min.y + " , " + max.y);
         //StartCoroutine(initPlayers());
         SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
         if (role == "ninja")
@@ -155,11 +159,28 @@ public class Player : NetworkBehaviour {
         }
         //Player.print(this.alias);
         // 下面写控制
-        movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
-
+        //movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        float length = Input.GetAxis("Horizontal") * speedmul;
+        if ((facingleft && length < 0) || (length > 0 && !facingleft))
+            flip();
+        if (transform.position.x + length < min.x - 1)
+            length = min.x - 1f - transform.position.x;
+        if (transform.position.x + length > max.x + 1)
+            length = max.x + 1f - transform.position.x;
+        movement = new Vector2(length, 0);
         maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
 
 
+    }
+
+    bool facingleft;
+    void flip() {
+        facingleft = !facingleft;
+        Vector3 temp = transform.localScale;
+        temp.x *= -1;
+        transform.localScale = temp;
     }
 
     void FixedUpdate() {

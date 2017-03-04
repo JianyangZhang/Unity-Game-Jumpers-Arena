@@ -45,4 +45,8 @@ public class GameManager : MonoBehaviour {
     void Update() {
 
     }
+
+    public void gameOver() {
+
+    }
 }
