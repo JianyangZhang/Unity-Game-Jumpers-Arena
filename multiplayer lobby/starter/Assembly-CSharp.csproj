@@ -58,6 +58,7 @@
      <Compile Include="Assets\LobbyPackage\Scripts\Lobby\LobbyServerEntry.cs" />
      <Compile Include="Assets\LobbyPackage\Scripts\Lobby\LobbyServerList.cs" />
      <Compile Include="Assets\LobbyPackage\Scripts\Lobby\LobbyTopPanel.cs" />
+     <Compile Include="Assets\scripts\AnimationController.cs" />
      <Compile Include="Assets\scripts\Background\simplescroll.cs" />
      <Compile Include="Assets\scripts\BaseButton.cs" />
      <Compile Include="Assets\scripts\BasicController.cs" />

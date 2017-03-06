@@ -1,19 +1,23 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\StartMenuManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\AnimationController.cs">
     <Files>
-      <File FileName="Assets\scripts\LobbySceneChange.cs" Line="23" Column="1" />
-      <File FileName="Assets\scripts\BasicPlayerInfo.cs" Line="40" Column="31" />
-      <File FileName="Assets\scripts\StartMenuManager.cs" Line="25" Column="88" />
-      <File FileName="Assets\scripts\Player.cs" Line="139" Column="17" />
-      <File FileName="Assets\LobbyPackage\Scripts\Lobby\LobbyPlayer.cs" Line="137" Column="10" />
-      <File FileName="Assets\scripts\Character.cs" Line="8" Column="19" />
+      <File FileName="Assets\scripts\LobbySceneChange.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BasicPlayerInfo.cs" Line="3" Column="19" />
+      <File FileName="Assets\scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\LobbyPackage\Scripts\Lobby\LobbyPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Character.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Player1.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BasicController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Destroy.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BaseButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\AnimationController.cs" Line="11" Column="86" />
+      <File FileName="Assets\scripts\StartMenuManager.cs" Line="31" Column="68" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="H:\projects\UnityProjects\Unity3D-Game-Jumpers-Arena\multiplayer lobby\starter\Assets\LobbyPackage\Scripts\Lobby\LobbyManager.cs" line="61" column="3" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

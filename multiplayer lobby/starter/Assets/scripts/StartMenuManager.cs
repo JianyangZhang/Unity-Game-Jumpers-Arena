@@ -26,6 +26,12 @@ public class StartMenuManager : MonoBehaviour {
 		armatureComponent.animation.Play ("JumpBlink",1);
 		armatureComponent.transform.localPosition = new Vector3 (-1.0f, -0.6f, -7.0f);
 		armatureComponent.transform.localScale =  new Vector3(0.8f, 0.8f, 2.0f);
+		//armatureComponent.DispatchEvent(UnityEngine.EventType.MouseDown, )
+		//armatureComponent.AddEventListener (UnityEngine.EventType.MouseDown, AnimationController.PlayRandomEventHandler);
+		armatureComponent.gameObject.AddComponent<AnimationController>();
+		BoxCollider box = armatureComponent.gameObject.AddComponent<BoxCollider> ();
+		box.size = new Vector3 (2.0f, 4.0f, 1.0f);
+		box.center = new Vector3 (0.0f, 1.0f, 0.0f);
 	}
 	
 	// Update is called once per frame
