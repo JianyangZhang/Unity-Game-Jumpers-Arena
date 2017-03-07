@@ -59,8 +59,8 @@ public class StartMenuManager : MonoBehaviour {
 	}
 
 	public void ChgEyesBtnOnClick(){
-		BasicPlayerInfo.instance.eyesIndex %= BasicPlayerInfo.eyesRange;
 		BasicPlayerInfo.instance.eyesIndex += 1;
+		BasicPlayerInfo.instance.eyesIndex %= BasicPlayerInfo.eyesRange;
 		if (armatureComponent) {
 			BasicPlayerInfo.UpdateEyes (BasicPlayerInfo.instance.eyesIndex, armatureComponent);
 			armatureComponent.animation.Play ("Blink", 1);
@@ -68,8 +68,8 @@ public class StartMenuManager : MonoBehaviour {
 	}
 
 	public void ChgCharBtnOnClick(){
-		BasicPlayerInfo.instance.characterIndex %= BasicPlayerInfo.characterRange;
 		BasicPlayerInfo.instance.characterIndex += 1;
+		BasicPlayerInfo.instance.characterIndex %= BasicPlayerInfo.characterRange;
 
 		if (armatureComponent) {
 			BasicPlayerInfo.UpdateChar (BasicPlayerInfo.instance.characterIndex, armatureComponent);
@@ -77,12 +77,12 @@ public class StartMenuManager : MonoBehaviour {
 		}
 
 		GameObject.Find ("Char").GetComponentInChildren<Text> ().text = 
-			BasicPlayerInfo.instance.CharacterDiscription[BasicPlayerInfo.instance.characterIndex - 1];
+			BasicPlayerInfo.instance.CharacterDiscription[BasicPlayerInfo.instance.characterIndex];
 	}
 
 	public void ChgColorBtnOnClick(){
-		BasicPlayerInfo.instance.colorIndex %= BasicPlayerInfo.colorRange;
 		BasicPlayerInfo.instance.colorIndex += 1;
+		BasicPlayerInfo.instance.colorIndex %= BasicPlayerInfo.colorRange;
 		if (armatureComponent) {
 			BasicPlayerInfo.UpdateColor (BasicPlayerInfo.instance.colorIndex, armatureComponent);
 			armatureComponent.animation.Play ("HeadBlink", 1);

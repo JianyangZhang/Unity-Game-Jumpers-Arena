@@ -20,9 +20,9 @@ public class BasicPlayerInfo : MonoBehaviour {
 		} else {
 			instance = this;
 			playerName = "";
-			characterIndex = 1;
-			eyesIndex = 1;
-			colorIndex = 1;
+			characterIndex = 0;
+			eyesIndex = 0;
+			colorIndex = 0;
 			DontDestroyOnLoad(gameObject);
 		}
 	}
@@ -40,14 +40,14 @@ public class BasicPlayerInfo : MonoBehaviour {
 	public static void UpdateEyes(int index, UnityArmatureComponent armatureComponent) {
 		if (!armatureComponent)
 			return;
-		string picName = "eyes-" + index;
+		string picName = "eyes-" + (++index);
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "eyes", picName, armatureComponent.armature.GetSlot("eyes"));
 	}
 
 	public static void UpdateChar(int index, UnityArmatureComponent armatureComponent) {
 		if (!armatureComponent)
 			return;
-		string picName = "-deco-" + index;
+		string picName = "-deco-" + (++index);
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "body-deco", "body"+picName, armatureComponent.armature.GetSlot("body-deco"));
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "head-deco", "head"+picName, armatureComponent.armature.GetSlot("head-deco"));
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "lefthand-deco", "lh"+picName, armatureComponent.armature.GetSlot("lefthand-deco"));
@@ -62,7 +62,7 @@ public class BasicPlayerInfo : MonoBehaviour {
 		if (!armatureComponent)
 			return;
 
-		string picName = "-color-" + index;
+		string picName = "-color-" + (++index);
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "body-color", "body"+picName, armatureComponent.armature.GetSlot("body-color"));
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "head-color", "head"+picName, armatureComponent.armature.GetSlot("head-color"));
 		UnityFactory.factory.ReplaceSlotDisplay ("cat", "MarvinCat", "lefthand-color", "lh"+picName, armatureComponent.armature.GetSlot("lefthand-color"));

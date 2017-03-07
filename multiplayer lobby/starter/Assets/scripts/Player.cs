@@ -77,7 +77,7 @@ public class Player : NetworkBehaviour {
         foreach (GameObject gameObj in objs) {
             Player p = gameObj.GetComponent<Player>();
             playerDic[p.netId] = p;
-            players.Add(p);
+			players.Add(p);
         }
     }
 
@@ -165,11 +165,19 @@ public class Player : NetworkBehaviour {
 		BasicPlayerInfo.UpdateEyes (eyes, armatureComponent);
 		BasicPlayerInfo.UpdateChar (charIndex, armatureComponent);
 		BasicPlayerInfo.UpdateColor (skin, armatureComponent);
-
+		if (this.isLocalPlayer) {
+			int index = 1;
+			GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+			foreach (GameObject gameObj in objs) {
+				Player p = gameObj.GetComponent<Player> ();
+				p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3 (0.0f, 0.0f, -15.0f + index);
+				index++;
+			}
+			armatureComponent.transform.position = new Vector3 (0.0f, 0.0f, -15.0f);
+		}
         items = new List<string>();
         speedmul = 5f;
 		initPlayers();
-		armatureComponent.transform.position = new Vector3 (0.0f, 0.0f, -10.0f - slots);
     }
 
     // Update is called once per frame

@@ -7,12 +7,14 @@
       <File FileName="Assets\scripts\Player1.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\GameManager.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\Helper.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Player.cs" Line="172" Column="81" />
-      <File FileName="Assets\LobbyPackage\Scripts\Lobby\LobbyPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Player.cs" Line="173" Column="45" />
+      <File FileName="Assets\LobbyPackage\Scripts\Lobby\LobbyPlayer.cs" Line="156" Column="38" />
       <File FileName="Assets\scripts\AnimationController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\StartMenuManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\BasicPlayerInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\StartMenuManager.cs" Line="80" Column="89" />
+      <File FileName="Assets\scripts\BasicPlayerInfo.cs" Line="61" Column="59" />
       <File FileName="Assets\scripts\NetworkLobbyHook.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BasicController.cs" Line="1" Column="1" />
+      <File FileName="Assets\LobbyPackage\Scripts\Lobby\LobbyManager.cs" Line="272" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
