@@ -24,4 +24,16 @@ public class AnimationController : MonoBehaviour {
 		}
 		_armatureComponent.animation.Play (AnimationController.randomActionSet [action], 1);
 	}
+
+	public static void PlayDownEventHandler(string type, EventObject eventObj) {
+		eventObj.armature.animation.Reset ();
+		Player.print ("Down");
+		eventObj.armature.animation.GotoAndPlayByFrame ("Down");
+	}
+
+	public static void PlayStandEventHandler(string type, EventObject eventObj) {
+		eventObj.armature.animation.Reset ();
+		Player.print ("Stand");
+		eventObj.armature.animation.GotoAndPlayByFrame ("Stand");
+	}
 }

@@ -12,7 +12,7 @@ public class BasicPlayerInfo : MonoBehaviour {
 	public const int characterRange = 4;
 	public const int eyesRange = 5;
 	public const int colorRange = 4;
-	public string[] CharacterDiscription = {"Assasin", "Archer", "Berserker","Wizard"};
+	public string[] CharacterDiscription = {"Assasin", "Archer", "Berserker","Enchanter"};
 
 	void Awake() {
 		if (instance) {

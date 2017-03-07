@@ -24,7 +24,7 @@ public class StartMenuManager : MonoBehaviour {
 		BasicPlayerInfo.UpdateChar (BasicPlayerInfo.instance.characterIndex, armatureComponent);
 		BasicPlayerInfo.UpdateColor (BasicPlayerInfo.instance.colorIndex, armatureComponent);
 		armatureComponent.animation.Play ("JumpBlink",1);
-		armatureComponent.transform.localPosition = new Vector3 (-1.0f, -0.6f, -7.0f);
+		armatureComponent.transform.localPosition = new Vector3 (-1.0f, -1.0f, -7.0f);
 		armatureComponent.transform.localScale =  new Vector3(0.8f, 0.8f, 2.0f);
 		//armatureComponent.DispatchEvent(UnityEngine.EventType.MouseDown, )
 		//armatureComponent.AddEventListener (UnityEngine.EventType.MouseDown, AnimationController.PlayRandomEventHandler);
@@ -56,9 +56,6 @@ public class StartMenuManager : MonoBehaviour {
 
 	public void pickCharacter(int i) {
 		BasicPlayerInfo.instance.characterIndex = i;
-		if (armatureComponent) {
-			armatureComponent.animation.Play ("HeadBlink", 1);
-		}
 	}
 
 	public void ChgEyesBtnOnClick(){

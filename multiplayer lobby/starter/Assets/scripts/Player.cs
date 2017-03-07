@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using DragonBones;
 
 public class Player : NetworkBehaviour {
     // public string id;
@@ -13,7 +14,11 @@ public class Player : NetworkBehaviour {
     [SyncVar]
     public string alias;
     [SyncVar]
-    public int hp;
+	public int hp;
+	[SyncVar]
+	public int eyes;
+	[SyncVar]
+	public int skin;
 
     public List<string> items;
     //public List<Item> items;
@@ -38,8 +43,10 @@ public class Player : NetworkBehaviour {
     public Dictionary<string, EventBean> timeDic = new Dictionary<string, EventBean>();
     public Sprite[] sprites;
     private int listIndex = 0;
+	public UnityArmatureComponent armatureComponent;
+	public bool isUp = false;
+	public bool isDown = true;
 
-    
     private Dictionary<NetworkInstanceId, Player> playerDic;
     private List<Player> players;
 
@@ -65,7 +72,7 @@ public class Player : NetworkBehaviour {
         //yield return new WaitForSeconds(2);
         playerDic = new Dictionary<NetworkInstanceId, Player>();
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-        Player.print(objs.Length + "player objs" + this.netId);
+		Player.print(objs.Length + "player objs" + this.netId);
         players = new List<Player>();
         foreach (GameObject gameObj in objs) {
             Player p = gameObj.GetComponent<Player>();
@@ -135,21 +142,34 @@ public class Player : NetworkBehaviour {
         Player.print("width:" + min.x + " , " + max.x);
         Player.print("height:" + min.y + " , " + max.y);
         //StartCoroutine(initPlayers());
-        SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
-        if (role == "ninja")
-            spriteRenderer.sprite = sprites[0];
-        else if (role == "hunter")
-            spriteRenderer.sprite = sprites[1];
-        else if (role == "enchanter")
-            spriteRenderer.sprite = sprites[2];
-        else if (role == "thief")
-            spriteRenderer.sprite = sprites[3];
+       // SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
+		int charIndex = 0;
+		for (int i = 0; i < BasicPlayerInfo.instance.CharacterDiscription.Length; i++) {
+			if (role == BasicPlayerInfo.instance.CharacterDiscription [i]) {
+				charIndex = i;
+				break;
+			}
+		}
+        //if (role == "ninja")
+       //     spriteRenderer.sprite = sprites[0];
+       // else if (role == "hunter")
+       //     spriteRenderer.sprite = sprites[1];
+       // else if (role == "enchanter")
+       //     spriteRenderer.sprite = sprites[2];
+       // else if (role == "thief")
+       //     spriteRenderer.sprite = sprites[3];
         CmdInitializeAll();
         maincamera = Camera.main;
-        m_RigidBody2D = GetComponent<Rigidbody2D>();
+		m_RigidBody2D = GetComponent<Rigidbody2D>();
+		armatureComponent = GetComponent<UnityArmatureComponent>();
+		BasicPlayerInfo.UpdateEyes (eyes, armatureComponent);
+		BasicPlayerInfo.UpdateChar (charIndex, armatureComponent);
+		BasicPlayerInfo.UpdateColor (skin, armatureComponent);
+
         items = new List<string>();
         speedmul = 5f;
-        initPlayers();
+		initPlayers();
+		armatureComponent.transform.position = new Vector3 (0.0f, 0.0f, -10.0f - slots);
     }
 
     // Update is called once per frame
@@ -163,6 +183,7 @@ public class Player : NetworkBehaviour {
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         float length = Input.GetAxis("Horizontal") * speedmul;
+
         if ((facingleft && length < 0) || (length > 0 && !facingleft))
             flip();
         if (transform.position.x + length < min.x - 1)
@@ -170,7 +191,9 @@ public class Player : NetworkBehaviour {
         if (transform.position.x + length > max.x + 1)
             length = max.x + 1f - transform.position.x;
         movement = new Vector2(length, 0);
+	
         maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
+
 
 
     }
@@ -191,7 +214,25 @@ public class Player : NetworkBehaviour {
         nowvelocity = m_RigidBody2D.velocity;
         m_RigidBody2D.velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
         m_RigidBody2D.velocity += movement;
-        eventManager();
+		eventManager();
+		//Player.print (nowvelocity.y  );
+		if (m_RigidBody2D.velocity.y > 0 && !isUp) {
+			isDown = false;
+			isUp = true;
+			//armatureComponent.animation..Reset ();
+			armatureComponent.animation.Play ("TouchBottom", 1);
+			armatureComponent.RemoveEventListener (EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
+			armatureComponent.AddEventListener (EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
+		}
+		if (m_RigidBody2D.velocity.y < 0 && !isDown){
+			isDown = true;
+			isUp = false;
+			//armatureComponent.animation.Reset ();
+			armatureComponent.animation.Play ("StartDown",1);
+			armatureComponent.RemoveEventListener (EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
+			armatureComponent.AddEventListener (EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
+
+		}
         //if (nowvelocity.y > 0)
         //maincamera.transform.position += new Vector3 (0f, Mathf.Max(transform.position.y-maincamera.transform.position.y,0) ,0);
 

@@ -11,7 +11,8 @@ public class NetworkLobbyHook : LobbyHook {
 		localPlayer.alias = lobby.playerName;
 		localPlayer.role = lobby.playerRole;
 		localPlayer.slots = lobby.playerSlots;
-
+		localPlayer.eyes = lobby.playerEyes;
+		localPlayer.skin = lobby.playerSkin;
         //localPlayer.camera = Camera.main; 
 	}
 }

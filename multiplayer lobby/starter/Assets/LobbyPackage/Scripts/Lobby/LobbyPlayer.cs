@@ -39,6 +39,10 @@ namespace Prototype.NetworkLobby {
 		public int playerSlots = 0;
 		[SyncVar(hook = "OnMyColor")]
 		public Color playerColor = Color.white;
+		[SyncVar (hook="OnMyEyes")]
+		public int playerEyes = 0;
+		[SyncVar (hook="OnMySkin")]
+		public int playerSkin = 0;
 
 
 		public Color OddRowColor = new Color(250.0f / 255.0f, 250.0f / 255.0f, 250.0f / 255.0f, 1.0f);
@@ -73,6 +77,8 @@ namespace Prototype.NetworkLobby {
 			OnMyName(playerName);
 			OnMyColor(playerColor);
 			OnMyRole(playerRole);
+			OnMyEyes(playerEyes);
+			OnMySkin(playerSkin);
 		}
 
 		public override void OnStartAuthority() {
@@ -126,31 +132,33 @@ namespace Prototype.NetworkLobby {
 				// CmdNameChanged("Player" + (LobbyPlayerList._instance.playerListContentTransform.childCount - 1));
 				CmdNameChanged(BasicPlayerInfo.instance.playerName);
 			}
+			playerEyes = BasicPlayerInfo.instance.eyesIndex;
+			playerSkin = BasicPlayerInfo.instance.colorIndex;
 			if (playerRole == "" || playerSlots == 0) {
 				switch (BasicPlayerInfo.instance.characterIndex) {
 					case 0:
-						CmdRoleChanged("ninja");
-						CmdRoleTextChange("ninja");
+						CmdRoleChanged("Assasin");
+						CmdRoleTextChange("Assasin");
 						CmdSlotsChanged(2);
 						break;				
 					case 1:
-						CmdRoleChanged("hunter");
-						CmdRoleTextChange("hunter");
+						CmdRoleChanged("Archer");
+						CmdRoleTextChange("Archer");
 						CmdSlotsChanged(3);
 						break;	
 					case 2:
-						CmdRoleChanged("enchanter");
-						CmdRoleTextChange("enchanter");
+						CmdRoleChanged("Berserker");
+						CmdRoleTextChange("Berserker");
 						CmdSlotsChanged(1);
 						break;	
 					case 3:
-						CmdRoleChanged("thief");
-						CmdRoleTextChange("thief");
+						CmdRoleChanged("Enchanter");
+						CmdRoleTextChange("Enchanter");
 						CmdSlotsChanged(2);
 						break;	
 					default:
-						CmdRoleChanged("ninja");
-						CmdRoleTextChange("ninja");
+						CmdRoleChanged("Assasin");
+						CmdRoleTextChange("Assasin");
 						CmdSlotsChanged(2);
 						break;
 				}
@@ -227,14 +235,23 @@ namespace Prototype.NetworkLobby {
 		}
 
 		public void OnMyRole(string role) {
-			if (role.Equals("enchanter")) {
-				this.role.fontSize = 20;
-			} else {
-				this.role.fontSize = 26;
-			}
+			//if (role.Equals("Enchanter")) {
+			//	this.role.fontSize = 20;
+			//} else {
+			//	this.role.fontSize = 26;
+			//}
+			this.role.fontSize = 20;
 			this.role.text = role;
 		}
 
+		public void OnMyEyes(int eyes) {
+			playerEyes = eyes;
+		}
+
+
+		public void OnMySkin(int skin) {
+			playerSkin = skin;
+		}
 		//===== UI Handler
 
 		//Note that those handler use Command function, as we need to change the value on the server not locally
@@ -330,6 +347,16 @@ namespace Prototype.NetworkLobby {
 			playerSlots = slots;
 		}
 
+		[Command]
+		public void CmdEyesChanged(int eyes) {
+			playerEyes = eyes;	
+		}
+
+
+		[Command]
+		public void CmdSkinChanged(int skin) {
+			playerSkin = skin;	
+		}
 		//Cleanup thing when get destroy (which happen when client kick or disconnect)
 		public void OnDestroy() {
 			LobbyPlayerList._instance.RemovePlayer(this);
