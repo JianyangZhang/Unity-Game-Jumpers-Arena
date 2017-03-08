@@ -195,10 +195,10 @@ public class Player : NetworkBehaviour {
 
         if ((facingleft && length < 0) || (length > 0 && !facingleft))
             flip();
-        if (transform.position.x + length < min.x - 1)
-            length = min.x - 1f - transform.position.x;
-        if (transform.position.x + length > max.x + 1)
-            length = max.x + 1f - transform.position.x;
+        //if (transform.position.x + length < min.x - 1)
+        //    length = min.x - 1f - transform.position.x;
+        //if (transform.position.x + length > max.x + 1)
+        //    length = max.x + 1f - transform.position.x;
         movement = new Vector2(length, 0);
 	
         maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
