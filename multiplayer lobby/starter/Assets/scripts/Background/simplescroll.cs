@@ -16,11 +16,16 @@ namespace Arena {
 	    // Use this for initialization
 	    void Start () {
             beginPosition = transform.position;
+            initPlayer();
+        }
+
+        void initPlayer() {
             GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
             foreach (GameObject gameObj in objs) {
                 Player p = gameObj.GetComponent<Player>();
                 if (p.isLocalPlayer) {
                     hero = p;
+                    Player.print("Set player to background" + p.netId);
                     break;
                 }
             }
@@ -31,6 +36,7 @@ namespace Arena {
 
             if (hero == null) {
                 Player.print("No Player!");
+                initPlayer();
                 return;//Why?
             }
 
