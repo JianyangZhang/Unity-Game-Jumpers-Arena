@@ -162,18 +162,19 @@ public class Player : NetworkBehaviour {
         maincamera = Camera.main;
 		m_RigidBody2D = GetComponent<Rigidbody2D>();
 		armatureComponent = GetComponent<UnityArmatureComponent>();
+		Player.print ("eyes"+eyes+"char" + charIndex + "skin"+skin);
 		BasicPlayerInfo.UpdateEyes (eyes, armatureComponent);
 		BasicPlayerInfo.UpdateChar (charIndex, armatureComponent);
 		BasicPlayerInfo.UpdateColor (skin, armatureComponent);
-		if (this.isLocalPlayer) {
-			int index = 1;
-			GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-			foreach (GameObject gameObj in objs) {
-				Player p = gameObj.GetComponent<Player> ();
-				p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3 (0.0f, 0.0f, -15.0f + index);
-				index++;
+		int index = 1;
+		GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+		foreach (GameObject gameObj in objs) {
+			Player p = gameObj.GetComponent<Player> ();
+			p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3 (0.0f, 0.0f, -15.0f + index);
+			index++;
+			if (p.isLocalPlayer) {
+				armatureComponent.transform.position = new Vector3 (0.0f, 0.0f, -15.0f);
 			}
-			armatureComponent.transform.position = new Vector3 (0.0f, 0.0f, -15.0f);
 		}
         items = new List<string>();
         speedmul = 5f;

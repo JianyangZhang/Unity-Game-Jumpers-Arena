@@ -132,8 +132,8 @@ namespace Prototype.NetworkLobby {
 				// CmdNameChanged("Player" + (LobbyPlayerList._instance.playerListContentTransform.childCount - 1));
 				CmdNameChanged(BasicPlayerInfo.instance.playerName);
 			}
-			playerEyes = BasicPlayerInfo.instance.eyesIndex;
-			playerSkin = BasicPlayerInfo.instance.colorIndex;
+			CmdEyesChanged(BasicPlayerInfo.instance.eyesIndex);
+			CmdSkinChanged(BasicPlayerInfo.instance.colorIndex);
 			if (playerRole == "" || playerSlots == 0) {
 				switch (BasicPlayerInfo.instance.characterIndex) {
 					case 0:
