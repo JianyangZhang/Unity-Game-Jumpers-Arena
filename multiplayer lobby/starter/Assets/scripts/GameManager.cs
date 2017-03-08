@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public float itemTimeInterval;
     public float maxLength;
     public int initItemNum;
+    public 
 
     // Use this for initialization
     void Start() {

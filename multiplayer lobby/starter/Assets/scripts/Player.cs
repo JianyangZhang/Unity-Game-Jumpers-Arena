@@ -177,7 +177,7 @@ public class Player : NetworkBehaviour {
 			}
 		}
         items = new List<string>();
-        speedmul = 5f;
+        speedmul = 15f;
 		initPlayers();
     }
 
