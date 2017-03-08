@@ -191,8 +191,8 @@ public class Player : NetworkBehaviour {
         //movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        float length = Input.GetAxis("Horizontal") * speedmul;
-
+        //float length = Input.GetAxis("Horizontal") * speedmul;
+        float length = Input.acceleration.x * speedmul;
         if ((facingleft && length < 0) || (length > 0 && !facingleft))
             flip();
         //if (transform.position.x + length < min.x - 1)
