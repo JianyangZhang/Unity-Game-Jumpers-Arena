@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FinishFloor : MonoBehaviour {
 
-    //MainHelper mh;
+    GameManager mr;
 
     private void Awake() {
-        //mh = GameObject.Find("MainHelper").GetComponent<MainHelper>();
+        mr = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Use this for initialization
@@ -23,7 +23,7 @@ public class FinishFloor : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D e) {
         if (e.gameObject.tag.CompareTo("Player") == 0) {
             print("finish");
-            //mh.Gameover(1);
+            mr.gameOver();
         }
     }
 }
