@@ -45,8 +45,8 @@ namespace Arena{
 
 		// Update is called once per frame
 		void Update () {
-            movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
-            //movement = new Vector2(Input.acceleration.x * speedmul, 0);
+            //movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
+            movement = new Vector2(Input.acceleration.x * speedmul, 0);
 
 
             if ((facingleft && movement.x < 0) || (movement.x > 0 && !facingleft))

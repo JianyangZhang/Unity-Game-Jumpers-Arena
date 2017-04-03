@@ -23,7 +23,7 @@ namespace Arena{
 			{   
 				Onpu.print("Touch");  
 				//speedplus += 2f;
-				e.gameObject.GetComponent<Player>().velocity=new Vector2(0,12);
+				e.gameObject.GetComponent<Player>().velocity=new Vector2(0,8);//old:12
 				//Destroy(e.gameObject);
 			}  
 		}

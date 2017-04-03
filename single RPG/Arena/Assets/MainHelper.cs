@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Arena
 {
@@ -10,6 +12,7 @@ namespace Arena
         public Player hero;
         public GameObject resultDialog;
         public GameObject middleGround;
+        public GameObject temp_Result_Height;
 
         public FloorMapSetting currentStage;
 
@@ -39,6 +42,7 @@ namespace Arena
         {
             resultDialog.active = true;
             middleGround.active = false;
+            temp_Result_Height.GetComponent<Text>().text = hero.transform.position.y.ToString("f0");
         }
     }
 
@@ -56,7 +60,7 @@ namespace Arena
             blocks[1] = new floorBlockSetting(1, 30, new float[3] { 0.5f, 1f, 1f }, 2, 2, 3, 0, new floorPlacing[0]);
             blocks[2] = new floorBlockSetting(30, 60, new float[3] { 0.5f, 0.75f, 1f }, 2, 2, 4, 0, new floorPlacing[0]); //new floorPlacing[1] { new floorPlacing(0, 0, 0) });
             blocks[3] = new floorBlockSetting(60, 100, new float[3] { 0.25f, 0.75f, 1f }, 2, 2, 4, 0, new floorPlacing[0]);
-            blocks[4] = new floorBlockSetting(100, 200, new float[3] { 0f, 1f, 1f }, 2, 3, 4, 0, new floorPlacing[0]); // new floorPlacing[1] { new floorPlacing(0, 0, 0) });
+            blocks[4] = new floorBlockSetting(100, 200, new float[3] { 0f, 1f, 1f }, 2, 3, 4, 0, new floorPlacing[1] { new floorPlacing(1, 0, 0) });
             blocks[5] = new floorBlockSetting(200, 220, new float[3] { 0f, 0.75f, 1f }, 0, 3, 4, 0, new floorPlacing[1] { new floorPlacing(1, 0, 0) });
         }
     }

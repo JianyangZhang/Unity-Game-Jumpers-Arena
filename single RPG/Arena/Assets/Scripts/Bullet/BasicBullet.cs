@@ -7,7 +7,7 @@ namespace Arena
     public class BasicBullet : MonoBehaviour
     {
 
-        public int damage=10;
+        public int damage = 10;
         // Use this for initialization
         void Start()
         {
@@ -17,8 +17,7 @@ namespace Arena
         // Update is called once per frame
         void Update()
         {
-
-        }
+        } 
 
         void OnTriggerEnter2D(Collider2D e)
         {
