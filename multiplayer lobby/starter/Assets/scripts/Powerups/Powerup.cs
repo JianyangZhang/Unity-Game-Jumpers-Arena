@@ -23,6 +23,8 @@ public abstract class Powerup : MonoBehaviour {
             Powerup.print("meet powerup");
             Player player = e.gameObject.GetComponent<Player>();
             Powerup.print(player.alias);
+            Powerup.print("Slots : " + player.slots);
+            Powerup.print(player.isLocalPlayer + " " + player.items.Count);
             if (player.isLocalPlayer && player.items.Count < player.slots) {
                 //Item item = getItemObject(player);
                 string item = getItemObject();

@@ -179,6 +179,8 @@ public class Player : NetworkBehaviour {
         items = new List<string>();
         speedmul = 15f;
 		initPlayers();
+        // Warning!!!! make all character's slot as 1
+        slots = 1;
     }
 
     // Update is called once per frame
@@ -287,7 +289,7 @@ public class Player : NetworkBehaviour {
 		alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.即可*/
         
         hp = 100;
-        items = null;
+        //items = null;
         isShield = false;
         isAccelerated = false;
         isDecelerated = false;
