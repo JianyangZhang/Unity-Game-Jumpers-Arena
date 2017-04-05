@@ -1,9 +1,9 @@
-/multiplayer lobby/starter/[Ll]ibrary/
-/multiplayer lobby/starter/[Tt]emp/
-/multiplayer lobby/starter/[Oo]bj/
-/multiplayer lobby/starter/[Bb]uild/
-/multiplayer lobby/starter/[Bb]uilds/
-/multiplayer lobby/starter/Assets/AssetStoreTools*
+multiplayer lobby/starter/[Ll]ibrary/
+multiplayer lobby/starter/[Tt]emp/
+multiplayer lobby/starter/[Oo]bj/
+multiplayer lobby/starter/[Bb]uild/
+multiplayer lobby/starter/[Bb]uilds/
+multiplayer lobby/starter/Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
 /multiplayer lobby/lobby/.vs/
