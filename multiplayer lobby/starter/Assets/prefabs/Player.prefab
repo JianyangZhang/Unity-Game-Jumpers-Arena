@@ -336,7 +336,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4183274565894326
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1221,7 +1221,7 @@ MeshFilter:
 --- !u!50 &50893527130481504
 Rigidbody2D:
   serializedVersion: 4
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1240,7 +1240,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!61 &61268631389298498
 BoxCollider2D:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1254,7 +1254,7 @@ BoxCollider2D:
   m_Size: {x: 0.6461197, y: 3.8340356}
 --- !u!114 &114032919235295718
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1273,7 +1273,7 @@ MonoBehaviour:
   _zSpace: 0
 --- !u!114 &114085642430118362
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_LocalPlayerAuthority: 1
 --- !u!114 &114521550893867814
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_InterpolateMovement: 1
 --- !u!114 &114752862736454010
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1006471818383920}
@@ -1352,3 +1352,5 @@ MonoBehaviour:
   armatureComponent: {fileID: 0}
   isUp: 0
   isDown: 1
+  bulletPrefab_r: {fileID: 1530079119940824, guid: 559d2d62342da03439a16161c07df401,
+    type: 2}
