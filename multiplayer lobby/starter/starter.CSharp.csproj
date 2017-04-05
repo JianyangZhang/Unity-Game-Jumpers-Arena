@@ -141,6 +141,7 @@
     <Compile Include="Assets\scripts\Items\SyncListEventBean.cs" />
     <Compile Include="Assets\scripts\LobbySceneChange.cs" />
     <Compile Include="Assets\scripts\MiniJSON.cs" />
+    <Compile Include="Assets\scripts\Missile.cs" />
     <Compile Include="Assets\scripts\NetworkLobbyHook.cs" />
     <Compile Include="Assets\scripts\Player.cs" />
     <Compile Include="Assets\scripts\Player1.cs" />

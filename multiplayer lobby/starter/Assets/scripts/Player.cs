@@ -46,6 +46,7 @@ public class Player : NetworkBehaviour {
 	public UnityArmatureComponent armatureComponent;
 	public bool isUp = false;
 	public bool isDown = true;
+    public GameObject bulletPrefab_r;
 
     private Dictionary<NetworkInstanceId, Player> playerDic;
     private List<Player> players;
@@ -208,8 +209,27 @@ public class Player : NetworkBehaviour {
 	
         maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
 
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            CmdFire();
+        }
 
+    }
 
+    [Command]
+    void CmdFire() {
+        GameObject bullet_r = Instantiate(bulletPrefab_r, transform.position, transform.rotation);
+        //bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
+        Player.print("find Target");
+        foreach (Player p in players) {
+            if (p.netId != this.netId) {
+                bullet_r.GetComponent<Missile>().targetPlayer = p;
+                Player.print("Init target");
+                break;
+            }
+        }
+        
+        Destroy(bullet_r, 2);
+        NetworkServer.Spawn(bullet_r);
     }
 
     bool facingleft;

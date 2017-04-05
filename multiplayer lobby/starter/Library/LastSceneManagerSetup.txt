@@ -5,3 +5,6 @@ sceneSetups:
 - path: Assets/scenes/run.unity
   isLoaded: 1
   isActive: 0
+- path: Assets/scenes/lobby.unity
+  isLoaded: 0
+  isActive: 0
