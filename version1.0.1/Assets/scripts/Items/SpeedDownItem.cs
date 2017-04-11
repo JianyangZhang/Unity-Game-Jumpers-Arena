@@ -36,6 +36,7 @@ public static class SpeedDownItem {
         bean.finishTime = finishTime;
         bean.itemName = "SpeedDownItem";
         bean.className = "speed";
+        bean.delay = delay;
         //currentPlayer.timeDic["speed"] = bean;
         //currentPlayer.RpcAddEvent("speed", bean);
         foreach (Player player in targetPlayers) {

@@ -33,6 +33,7 @@ public static class SpeedUpItem {
         bean.finishTime = finishTime;
         bean.itemName = "SpeedUpItem";
         bean.className = "speed";
+        bean.delay = delay;
         bean.id = currentPlayer.netId;
         Player.print("Speed Up Item " + bean.id);
         //currentPlayer.speedRatio = speedRatio;

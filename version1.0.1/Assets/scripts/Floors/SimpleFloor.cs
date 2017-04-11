@@ -23,7 +23,7 @@ public class SimpleFloor : MonoBehaviour {
             //speedplus += 2f;
             Player player = e.gameObject.GetComponent<Player>();
             float speed = 15 * player.speedRatio;
-            SimpleFloor.print(speed);
+            //SimpleFloor.print(speed);
             player.velocity = new Vector2(0, speed);
             //Destroy(e.gameObject);
         }

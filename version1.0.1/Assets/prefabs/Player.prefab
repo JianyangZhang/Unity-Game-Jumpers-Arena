@@ -1342,6 +1342,7 @@ MonoBehaviour:
   skin: 0
   items: []
   isShield: 0
+  missileHited: 0
   isAccelerated: 0
   isDecelerated: 0
   isStunned: 0

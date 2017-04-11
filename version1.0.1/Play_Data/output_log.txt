@@ -1,35 +1,210 @@
-Initialize engine version: 5.5.0f3 (38b4efef76f0)
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1136 MB
-    Driver:   20.19.15.4531
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   21.21.13.7653
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\UnityTemp\version1.0.1\Play_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading C:\UnityTemp\version1.0.1\Play_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.062 seconds
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\UnityTemp\version1.0.1\Play_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\wddwxy\Documents\Unity-Game-Jumpers-Arena\version1.0.1\Play_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.406269 ms
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 9.374619 ms
+UnloadTime: 0.750116 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.113151 ms
 
-Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 489.
-Total: 2.120312 ms (FindLiveObjects: 0.129579 ms CreateObjectMapping: 0.060299 ms MarkObjects: 0.894653 ms  DeleteObjects: 1.033641 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 817.
+Total: 0.971114 ms (FindLiveObjects: 0.038834 ms CreateObjectMapping: 0.030403 ms MarkObjects: 0.827785 ms  DeleteObjects: 0.069237 ms)
 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2374 -> priority: 1 
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+ 
+(Filename:  Line: 447)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.237605 ms
+Set player to background3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set player to background3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Set player to background3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+width:-3.078975 , 3.078975
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+height:-5 , 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+eyes0char1skin0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+width:-3.078975 , 3.078975
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+height:-5.007848 , 4.992152
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+eyes0char0skin0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2835.
+Total: 1.406723 ms (FindLiveObjects: 0.097085 ms CreateObjectMapping: 0.051353 ms MarkObjects: 1.232991 ms  DeleteObjects: 0.022227 ms)
+
+meet powerup
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+a
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Slots : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+True 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+generate MissilePowerup Item
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+missile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+2player objs
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+network id :3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name :a
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+network id :5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+name :b
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setup Missile
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player :3 hits Player5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Target = 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(2.2, 33.6, -13.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(0.0, 23.1, -14.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+rotation :1.358346, move : 0.9775171
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Target = 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(2.2, 33.6, -13.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(0.6, 26.1, -14.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+rotation :1.360074, move : 0.97788
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Target = 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(2.2, 33.8, -13.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(1.3, 29.0, -14.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+rotation :1.365662, move : 0.9790336
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Target = 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(2.2, 33.8, -13.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+(1.9, 31.9, -14.0)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+rotation :1.373341, move : 0.980569
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player 5 is hitted
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Task: Player5 do task MissileItem
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 678c -> priority: 1 
+  Thread -> id: 48dc -> priority: 1 

@@ -27,13 +27,13 @@ public class AnimationController : MonoBehaviour {
 
 	public static void PlayDownEventHandler(string type, EventObject eventObj) {
 		eventObj.armature.animation.Reset ();
-		Player.print ("Down");
+		//Player.print ("Down");
 		eventObj.armature.animation.GotoAndPlayByFrame ("Down");
 	}
 
 	public static void PlayStandEventHandler(string type, EventObject eventObj) {
 		eventObj.armature.animation.Reset ();
-		Player.print ("Stand");
+		//Player.print ("Stand");
 		eventObj.armature.animation.GotoAndPlayByFrame ("Stand");
 	}
 }

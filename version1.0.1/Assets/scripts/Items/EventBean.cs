@@ -8,4 +8,5 @@ public struct EventBean {
     public int finishTime;
     public string itemName;
     public NetworkInstanceId id;
+    public int delay;
 }

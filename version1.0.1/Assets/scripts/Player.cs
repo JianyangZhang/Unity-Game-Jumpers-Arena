@@ -14,27 +14,30 @@ public class Player : NetworkBehaviour {
     [SyncVar]
     public string alias;
     [SyncVar]
-	public int hp;
-	[SyncVar]
-	public int eyes;
-	[SyncVar]
-	public int skin;
+    public int hp;
+    [SyncVar]
+    public int eyes;
+    [SyncVar]
+    public int skin;
 
     public List<string> items;
     //public List<Item> items;
     [SyncVar]
     public bool isShield;
     [SyncVar]
+    public bool missileHited;
+    [SyncVar]
     public bool isAccelerated;
     [SyncVar]
     public bool isDecelerated;
     [SyncVar]
     public bool isStunned;
-    
+
     public Camera maincamera;
     [SyncVar]
     public float speedRatio = 1f;
 
+    [SyncVar]
     public int time = 0;
     [SyncVar]
     public SyncListEventBean tasksList = new SyncListEventBean();
@@ -43,9 +46,9 @@ public class Player : NetworkBehaviour {
     public Dictionary<string, EventBean> timeDic = new Dictionary<string, EventBean>();
     public Sprite[] sprites;
     private int listIndex = 0;
-	public UnityArmatureComponent armatureComponent;
-	public bool isUp = false;
-	public bool isDown = true;
+    public UnityArmatureComponent armatureComponent;
+    public bool isUp = false;
+    public bool isDown = true;
     public GameObject bulletPrefab_r;
 
     private Dictionary<NetworkInstanceId, Player> playerDic;
@@ -73,12 +76,12 @@ public class Player : NetworkBehaviour {
         //yield return new WaitForSeconds(2);
         playerDic = new Dictionary<NetworkInstanceId, Player>();
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-		Player.print(objs.Length + "player objs" + this.netId);
+        //Player.print(objs.Length + "player objs" + this.netId);
         players = new List<Player>();
         foreach (GameObject gameObj in objs) {
             Player p = gameObj.GetComponent<Player>();
             playerDic[p.netId] = p;
-			players.Add(p);
+            players.Add(p);
         }
     }
 
@@ -96,6 +99,7 @@ public class Player : NetworkBehaviour {
                 foreach (EventBean e in p.tasksList) {
                     Player target = playerDic[e.id];
                     target.timeList.Add(e);
+                    Player.print("Task: Player" + target.netId + " do task " + e.itemName);
                 }
                 p.tasksList.Clear();
             }
@@ -106,13 +110,16 @@ public class Player : NetworkBehaviour {
     public void CmdAddTask(EventBean e) {
         tasksList.Add(e);
     }
-    
+
     private void eventManager() {
         //Player1.print(time);
         if (timeList.Count > listIndex) {
             for (; listIndex < timeList.Count; listIndex++) {
-                timeDic[timeList[listIndex].className] = timeList[listIndex];
-                Item.execute(timeList[listIndex].itemName, this);
+                EventBean bean = timeList[listIndex];
+                bean.finishTime = time + bean.delay;
+                timeDic[bean.className] = bean;
+                Item.execute(bean.itemName, this);
+                Player.print("Player " + this.netId + " exec " + bean.itemName + " " + time);
             }
         }
         time++;
@@ -121,7 +128,7 @@ public class Player : NetworkBehaviour {
             EventBean item = timeDic[name];
             if (item.finishTime <= time) {
                 //item.finish();
-                Player.print("finish " + item.itemName);
+                Player.print("finish " + item.itemName + " " + time);
                 Item.finish(item.itemName, this);
                 timeDic.Remove(name);
             }
@@ -130,7 +137,7 @@ public class Player : NetworkBehaviour {
 
     float speedmul;
     Vector2 movement;
-    
+
 
     private Rigidbody2D m_RigidBody2D;
 
@@ -143,43 +150,43 @@ public class Player : NetworkBehaviour {
         Player.print("width:" + min.x + " , " + max.x);
         Player.print("height:" + min.y + " , " + max.y);
         //StartCoroutine(initPlayers());
-       // SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
-		int charIndex = 0;
-		for (int i = 0; i < BasicPlayerInfo.instance.CharacterDiscription.Length; i++) {
-			if (role == BasicPlayerInfo.instance.CharacterDiscription [i]) {
-				charIndex = i;
-				break;
-			}
-		}
+        // SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
+        int charIndex = 0;
+        for (int i = 0; i < BasicPlayerInfo.instance.CharacterDiscription.Length; i++) {
+            if (role == BasicPlayerInfo.instance.CharacterDiscription[i]) {
+                charIndex = i;
+                break;
+            }
+        }
         //if (role == "ninja")
-       //     spriteRenderer.sprite = sprites[0];
-       // else if (role == "hunter")
-       //     spriteRenderer.sprite = sprites[1];
-       // else if (role == "enchanter")
-       //     spriteRenderer.sprite = sprites[2];
-       // else if (role == "thief")
-       //     spriteRenderer.sprite = sprites[3];
+        //     spriteRenderer.sprite = sprites[0];
+        // else if (role == "hunter")
+        //     spriteRenderer.sprite = sprites[1];
+        // else if (role == "enchanter")
+        //     spriteRenderer.sprite = sprites[2];
+        // else if (role == "thief")
+        //     spriteRenderer.sprite = sprites[3];
         CmdInitializeAll();
         maincamera = Camera.main;
-		m_RigidBody2D = GetComponent<Rigidbody2D>();
-		armatureComponent = GetComponent<UnityArmatureComponent>();
-		Player.print ("eyes"+eyes+"char" + charIndex + "skin"+skin);
-		BasicPlayerInfo.UpdateEyes (eyes, armatureComponent);
-		BasicPlayerInfo.UpdateChar (charIndex, armatureComponent);
-		BasicPlayerInfo.UpdateColor (skin, armatureComponent);
-		int index = 1;
-		GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-		foreach (GameObject gameObj in objs) {
-			Player p = gameObj.GetComponent<Player> ();
-			p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3 (0.0f, 0.0f, -15.0f + index);
-			index++;
-			if (p.isLocalPlayer) {
-				armatureComponent.transform.position = new Vector3 (0.0f, 0.0f, -15.0f);
-			}
-		}
+        m_RigidBody2D = GetComponent<Rigidbody2D>();
+        armatureComponent = GetComponent<UnityArmatureComponent>();
+        Player.print("eyes" + eyes + "char" + charIndex + "skin" + skin);
+        BasicPlayerInfo.UpdateEyes(eyes, armatureComponent);
+        BasicPlayerInfo.UpdateChar(charIndex, armatureComponent);
+        BasicPlayerInfo.UpdateColor(skin, armatureComponent);
+        int index = 1;
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject gameObj in objs) {
+            Player p = gameObj.GetComponent<Player>();
+            p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3(0.0f, 0.0f, -15.0f + index);
+            index++;
+            if (p.isLocalPlayer) {
+                armatureComponent.transform.position = new Vector3(0.0f, 0.0f, -15.0f);
+            }
+        }
         items = new List<string>();
         speedmul = 15f;
-		initPlayers();
+        initPlayers();
         // Warning!!!! make all character's slot as 1
         slots = 1;
     }
@@ -205,30 +212,74 @@ public class Player : NetworkBehaviour {
         //    length = min.x - 1f - transform.position.x;
         //if (transform.position.x + length > max.x + 1)
         //    length = max.x + 1f - transform.position.x;
-        movement = new Vector2(length, 0);
-	
+        //float scale = Random.Range(-1, 1);
+        if (missileHited)
+            movement = new Vector2(length * -1, 0);
+        else
+            movement = new Vector2(length, 0);
+
+
         maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
 
         if (Input.GetKeyDown(KeyCode.Space)) {
-            CmdFire();
+            CmdFire(this.netId);
         }
 
     }
 
     [Command]
-    void CmdFire() {
+    void CmdFire(NetworkInstanceId currentID) {
         GameObject bullet_r = Instantiate(bulletPrefab_r, transform.position, transform.rotation);
         //bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
         Player.print("find Target");
         foreach (Player p in players) {
-            if (p.netId != this.netId) {
+            if (p.netId != currentID) {
                 bullet_r.GetComponent<Missile>().targetPlayer = p;
+                bullet_r.GetComponent<Missile>().targetId = p.netId;
+                //bullet_r.GetComponent<Missile>().currentPlayer = this;
                 Player.print("Init target");
                 break;
             }
         }
-        
-        Destroy(bullet_r, 2);
+
+        //Destroy(bullet_r, 2);
+        NetworkServer.Spawn(bullet_r);
+    }
+
+    [Command]
+    public void CmdSetupMissile(NetworkInstanceId currentID) {
+        GameObject bullet_r = Instantiate(bulletPrefab_r, transform.position, transform.rotation);
+        //bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
+        Player.print("Setup Missile");
+        Player target = null;
+        Player current = null;
+        foreach (Player p in players) {
+            if (p.netId == currentID) {
+                current = p;
+                break;
+            }
+        }
+        float loc = float.MaxValue;
+        foreach (Player p in players) {
+            if (p.netId != currentID) {
+                if ((p.transform.position.y > current.transform.position.y) && (loc > p.transform.position.y)) {
+                    loc = p.transform.position.y;
+                    target = p;
+                }
+            }
+        }
+        bullet_r.GetComponent<Missile>().targetPlayer = target;
+        if (target != null) {
+            bullet_r.GetComponent<Missile>().targetId = target.netId;
+            Player.print("Player :" + currentID + " hits Player" + target.netId);
+        } else {
+            Player.print("Player :" + currentID + " hits NULL");
+        }
+        bullet_r.GetComponent<Missile>().currentPlayer = current;
+        if (target == null) {
+            Destroy(bullet_r, 2);
+            bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 0);
+        }
         NetworkServer.Spawn(bullet_r);
     }
 
@@ -248,25 +299,25 @@ public class Player : NetworkBehaviour {
         nowvelocity = m_RigidBody2D.velocity;
         m_RigidBody2D.velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
         m_RigidBody2D.velocity += movement;
-		eventManager();
-		//Player.print (nowvelocity.y  );
-		if (m_RigidBody2D.velocity.y > 0 && !isUp) {
-			isDown = false;
-			isUp = true;
-			//armatureComponent.animation..Reset ();
-			armatureComponent.animation.Play ("TouchBottom", 1);
-			armatureComponent.RemoveEventListener (EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
-			armatureComponent.AddEventListener (EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
-		}
-		if (m_RigidBody2D.velocity.y < 0 && !isDown){
-			isDown = true;
-			isUp = false;
-			//armatureComponent.animation.Reset ();
-			armatureComponent.animation.Play ("StartDown",1);
-			armatureComponent.RemoveEventListener (EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
-			armatureComponent.AddEventListener (EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
+        eventManager();
+        //Player.print (nowvelocity.y  );
+        if (m_RigidBody2D.velocity.y > 0 && !isUp) {
+            isDown = false;
+            isUp = true;
+            //armatureComponent.animation..Reset ();
+            armatureComponent.animation.Play("TouchBottom", 1);
+            armatureComponent.RemoveEventListener(EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
+            armatureComponent.AddEventListener(EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
+        }
+        if (m_RigidBody2D.velocity.y < 0 && !isDown) {
+            isDown = true;
+            isUp = false;
+            //armatureComponent.animation.Reset ();
+            armatureComponent.animation.Play("StartDown", 1);
+            armatureComponent.RemoveEventListener(EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
+            armatureComponent.AddEventListener(EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
 
-		}
+        }
         //if (nowvelocity.y > 0)
         //maincamera.transform.position += new Vector3 (0f, Mathf.Max(transform.position.y-maincamera.transform.position.y,0) ,0);
 
@@ -307,12 +358,13 @@ public class Player : NetworkBehaviour {
 				break;
 		}
 		alias = BasicPlayerInfo.instance.playerName; 初始化写在了lobbyhook里, 直接.即可*/
-        
+
         hp = 100;
         //items = null;
         isShield = false;
         isAccelerated = false;
         isDecelerated = false;
+        missileHited = false;
         isStunned = false;
     }
 }

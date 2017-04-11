@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50287310903397918}
   - component: {fileID: 114961292010618560}
   - component: {fileID: 212933507206811048}
+  - component: {fileID: 61500064281501762}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Untagged
@@ -64,6 +65,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61500064281501762
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530079119940824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.3714286, y: 0.81714284}
 --- !u!114 &114047951603345020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -128,6 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlayer: {fileID: 0}
+  currentPlayer: {fileID: 0}
 --- !u!212 &212933507206811048
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -159,7 +175,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 922934acf4ec3e845a24b2bb875a7873, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 386d123e6cfa75648b14189a6f037aa3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
