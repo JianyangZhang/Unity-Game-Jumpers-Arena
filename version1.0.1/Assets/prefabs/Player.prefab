@@ -1353,5 +1353,7 @@ MonoBehaviour:
   armatureComponent: {fileID: 0}
   isUp: 0
   isDown: 1
-  bulletPrefab_r: {fileID: 1530079119940824, guid: 559d2d62342da03439a16161c07df401,
+  bananaPrefab: {fileID: 1833291363911402, guid: a29d168232dee53488174657b2964c75,
+    type: 2}
+  missilePrefab: {fileID: 1530079119940824, guid: 559d2d62342da03439a16161c07df401,
     type: 2}

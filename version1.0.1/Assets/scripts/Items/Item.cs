@@ -42,6 +42,8 @@ public static class Item {
             SpeedUpItem.use(currentPlayer, targetPlayers);
         } else if (itemName == "MissileItem") {
             MissileItem.use(currentPlayer, targetPlayers);
+        } else if (itemName == "BananaItem") {
+            BananaItem.use(currentPlayer, targetPlayers);
         }
     }
 
@@ -52,6 +54,8 @@ public static class Item {
             SpeedUpItem.execute(currentPlayer);
         } else if (itemName == "MissileItem") {
             MissileItem.execute(currentPlayer);
+        } else if (itemName == "BananaItem") {
+            BananaItem.execute(currentPlayer);
         }
     }
 
@@ -62,6 +66,8 @@ public static class Item {
             SpeedUpItem.finish(currentPlayer);
         } else if (itemName == "MissileItem") {
             MissileItem.finish(currentPlayer);
+        } else if (itemName == "BananaItem") {
+            BananaItem.finish(currentPlayer);
         }
     }
 }

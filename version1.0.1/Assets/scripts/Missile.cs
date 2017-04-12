@@ -12,7 +12,7 @@ public class Missile : NetworkBehaviour {
     public Player currentPlayer = null;
 
     private const float speed = 3;
-    private int delay = 1500;
+    private int delay = 200;
 
     // Use this for initialization
     void Start() {

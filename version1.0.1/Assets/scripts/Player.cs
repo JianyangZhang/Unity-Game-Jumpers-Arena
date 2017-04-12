@@ -49,7 +49,8 @@ public class Player : NetworkBehaviour {
     public UnityArmatureComponent armatureComponent;
     public bool isUp = false;
     public bool isDown = true;
-    public GameObject bulletPrefab_r;
+    public GameObject bananaPrefab;
+    public GameObject missilePrefab;
 
     private Dictionary<NetworkInstanceId, Player> playerDic;
     private List<Player> players;
@@ -217,7 +218,10 @@ public class Player : NetworkBehaviour {
             movement = new Vector2(length * -1, 0);
         else
             movement = new Vector2(length, 0);
-
+        if (isStunned) {
+            movement = new Vector2(0, 0);
+            flip();
+        }
 
         maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
 
@@ -229,26 +233,32 @@ public class Player : NetworkBehaviour {
 
     [Command]
     void CmdFire(NetworkInstanceId currentID) {
-        GameObject bullet_r = Instantiate(bulletPrefab_r, transform.position, transform.rotation);
+        GameObject bullet_r = Instantiate(bananaPrefab, transform.position, transform.rotation);
         //bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
         Player.print("find Target");
-        foreach (Player p in players) {
-            if (p.netId != currentID) {
-                bullet_r.GetComponent<Missile>().targetPlayer = p;
-                bullet_r.GetComponent<Missile>().targetId = p.netId;
-                //bullet_r.GetComponent<Missile>().currentPlayer = this;
-                Player.print("Init target");
-                break;
-            }
-        }
+        //foreach (Player p in players) {
+        //    if (p.netId != currentID) {
+        //        bullet_r.GetComponent<Missile>().targetPlayer = p;
+        //        bullet_r.GetComponent<Missile>().targetId = p.netId;
+        //        //bullet_r.GetComponent<Missile>().currentPlayer = this;
+        //        Player.print("Init target");
+        //        break;
+        //    }
+        //}
 
         //Destroy(bullet_r, 2);
         NetworkServer.Spawn(bullet_r);
     }
 
     [Command]
+    public void CmdSetBanana() {
+        GameObject banana_r = Instantiate(bananaPrefab, transform.position, transform.rotation);
+        NetworkServer.Spawn(banana_r);
+    }
+
+    [Command]
     public void CmdSetupMissile(NetworkInstanceId currentID) {
-        GameObject bullet_r = Instantiate(bulletPrefab_r, transform.position, transform.rotation);
+        GameObject missile_r = Instantiate(missilePrefab, transform.position, transform.rotation);
         //bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(5, 0);
         Player.print("Setup Missile");
         Player target = null;
@@ -268,19 +278,19 @@ public class Player : NetworkBehaviour {
                 }
             }
         }
-        bullet_r.GetComponent<Missile>().targetPlayer = target;
+        missile_r.GetComponent<Missile>().targetPlayer = target;
         if (target != null) {
-            bullet_r.GetComponent<Missile>().targetId = target.netId;
+            missile_r.GetComponent<Missile>().targetId = target.netId;
             Player.print("Player :" + currentID + " hits Player" + target.netId);
         } else {
             Player.print("Player :" + currentID + " hits NULL");
         }
-        bullet_r.GetComponent<Missile>().currentPlayer = current;
+        missile_r.GetComponent<Missile>().currentPlayer = current;
         if (target == null) {
-            Destroy(bullet_r, 2);
-            bullet_r.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 0);
+            Destroy(missile_r, 2);
+            missile_r.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 0);
         }
-        NetworkServer.Spawn(bullet_r);
+        NetworkServer.Spawn(missile_r);
     }
 
     bool facingleft;
