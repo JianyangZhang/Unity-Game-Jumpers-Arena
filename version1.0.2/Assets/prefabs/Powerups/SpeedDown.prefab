@@ -55,7 +55,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.542, y: 0.542}
+  m_Size: {x: 0.6642857, y: 0.6642857}
 --- !u!114 &114425732034432580
 MonoBehaviour:
   m_ObjectHideFlags: 1
