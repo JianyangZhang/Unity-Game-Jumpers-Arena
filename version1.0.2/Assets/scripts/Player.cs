@@ -20,6 +20,11 @@ public class Player : NetworkBehaviour {
     [SyncVar]
     public int skin;
 
+    [SyncVar]
+    public NetworkInstanceId winnerId;
+    [SyncVar]
+    public string winnerName;
+
     public List<string> items;
     //public List<Item> items;
     [SyncVar]
@@ -61,6 +66,11 @@ public class Player : NetworkBehaviour {
     ParticleSystem flame;
     ParticleSystem slip;
     ParticleSystem dust;
+    bool facingleft;
+    float speedmul;
+    Vector2 movement;
+    private Rigidbody2D m_RigidBody2D;
+    Vector2 nowvelocity;
 
     public Vector2 velocity {
         get {
@@ -120,137 +130,11 @@ public class Player : NetworkBehaviour {
         tasksList.Add(e);
     }
 
-    private void eventManager() {
-        //Player1.print(time);
-        if (timeList.Count > listIndex) {
-            for (; listIndex < timeList.Count; listIndex++) {
-                EventBean bean = timeList[listIndex];
-                bean.finishTime = time + bean.delay;
-                timeDic[bean.className] = bean;
-                Item.execute(bean.itemName, this);
-                Player.print("Player " + this.netId + " exec " + bean.itemName + " " + time);
-            }
-        }
-        time++;
-        foreach (string name in new List<string>(timeDic.Keys)) {
-            //Item item = timeDic[name];
-            EventBean item = timeDic[name];
-            if (item.finishTime <= time) {
-                //item.finish();
-                Player.print("finish " + item.itemName + " " + time);
-                Item.finish(item.itemName, this);
-                timeDic.Remove(name);
-            }
-        }
-    }
-
-    float speedmul;
-    Vector2 movement;
-
-
-    private Rigidbody2D m_RigidBody2D;
-
-    Vector2 nowvelocity;
-
-    // Use this for initialization
-    void Start() {
-        audios = GetComponents<AudioSource>();
-        flame = transform.Find("Flame").GetComponent<ParticleSystem>();
-        slip = transform.Find("Slip").GetComponent<ParticleSystem>();
-        // dust = transform.Find("Dust").GetComponent<ParticleSystem>();
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        Player.print("width:" + min.x + " , " + max.x);
-        Player.print("height:" + min.y + " , " + max.y);
-        //StartCoroutine(initPlayers());
-        // SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
-        int charIndex = 0;
-        for (int i = 0; i < BasicPlayerInfo.instance.CharacterDiscription.Length; i++) {
-            if (role == BasicPlayerInfo.instance.CharacterDiscription[i]) {
-                charIndex = i;
-                break;
-            }
-        }
-        //if (role == "ninja")
-        //     spriteRenderer.sprite = sprites[0];
-        // else if (role == "hunter")
-        //     spriteRenderer.sprite = sprites[1];
-        // else if (role == "enchanter")
-        //     spriteRenderer.sprite = sprites[2];
-        // else if (role == "thief")
-        //     spriteRenderer.sprite = sprites[3];
-        CmdInitializeAll();
-        maincamera = Camera.main;
-        m_RigidBody2D = GetComponent<Rigidbody2D>();
-        armatureComponent = GetComponent<UnityArmatureComponent>();
-        Player.print("eyes" + eyes + "char" + charIndex + "skin" + skin);
-        BasicPlayerInfo.UpdateEyes(eyes, armatureComponent);
-        BasicPlayerInfo.UpdateChar(charIndex, armatureComponent);
-        BasicPlayerInfo.UpdateColor(skin, armatureComponent);
-        int index = 1;
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-        foreach (GameObject gameObj in objs) {
-            Player p = gameObj.GetComponent<Player>();
-            p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3(0.0f, 0.0f, -15.0f + index);
-            index++;
-            if (p.isLocalPlayer) {
-                armatureComponent.transform.position = new Vector3(0.0f, 0.0f, -15.0f);
-            }
-        }
-        items = new List<string>();
-        speedmul = 0.5f;
-        initPlayers();
-        // Warning!!!! make all character's slot as 1
-        slots = 1;
-    }
-
-    // Update is called once per frame
-    void Update() {
-        if (isLocalPlayer == false) {
-            return;
-        }
-        //Player.print(this.alias);
-        // 下面写控制
-        //movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
-        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
-        float length = 0f;
-        if (Input.GetAxis("Horizontal") != 0)
-            length = Input.GetAxis("Horizontal") * speedmul / 3;
-        else
-            length = Input.acceleration.x * speedmul;
-        if ((facingleft && length < 0) || (length > 0 && !facingleft))
-            flip();
-        //if (transform.position.x + length < min.x - 1)
-        //    length = min.x - 1f - transform.position.x;
-        //if (transform.position.x + length > max.x + 1)
-        //    length = max.x + 1f - transform.position.x;
-        //float scale = Random.Range(-1, 1);
-        length = Mathf.Clamp(length + transform.position.x, min.x, max.x);
-        if (missileHited)
-            movement = new Vector2(length * -1, 0);
-        else
-            movement = new Vector2(length, 0);
-        if (isStunned) {
-            movement = new Vector2(0, 0);
-            flip();
-        }
-        transform.position = new Vector2(length, transform.position.y);
-
-        maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
-
-        //if (Input.GetKeyDown(KeyCode.Space)) {
-        //	CmdFire(this.netId);
-        //}
-
-        if (isStunned && !audios[0].isPlaying) {
-            audios[0].PlayOneShot(slipAudio, 1f);
-            slip.Play();
-        }
-
-        if (speedRatio == 1.5f && !audios[1].isPlaying) {
-            audios[1].PlayOneShot(speedupAudio, 1f);
-            flame.Play();
+    [Command]
+    public void CmdAddWinner() {
+        foreach (Player player in players) {
+            player.winnerId = this.netId;
+            player.winnerName = this.alias;
         }
     }
 
@@ -316,57 +200,6 @@ public class Player : NetworkBehaviour {
         NetworkServer.Spawn(missile_r);
     }
 
-    bool facingleft;
-
-    void flip() {
-        facingleft = !facingleft;
-        Vector3 temp = transform.localScale;
-        temp.x *= -1;
-        transform.localScale = temp;
-    }
-
-    void FixedUpdate() {
-        taskManager();
-        if (isLocalPlayer == false) {
-            return;
-        }
-        nowvelocity = m_RigidBody2D.velocity;
-        m_RigidBody2D.velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
-        //m_RigidBody2D.velocity += movement;
-        //m_RigidBody2D.position += movement;
-        eventManager();
-        //Player.print (nowvelocity.y  );
-        if (m_RigidBody2D.velocity.y > 0 && !isUp) {
-            isDown = false;
-            isUp = true;
-            //armatureComponent.animation..Reset ();
-            armatureComponent.animation.Play("TouchBottom", 1);
-            armatureComponent.RemoveEventListener(EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
-            armatureComponent.AddEventListener(EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
-            audios[0].Play();
-        }
-        if (m_RigidBody2D.velocity.y < 0 && !isDown) {
-            isDown = true;
-            isUp = false;
-            //armatureComponent.animation.Reset ();
-            armatureComponent.animation.Play("StartDown", 1);
-            armatureComponent.RemoveEventListener(EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
-            armatureComponent.AddEventListener(EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
-        }
-        //if (nowvelocity.y > 0)
-        //maincamera.transform.position += new Vector3 (0f, Mathf.Max(transform.position.y-maincamera.transform.position.y,0) ,0);
-    }
-
-    //[ClientRpc]
-    //public int CmdCountItemlist() {
-    //    return items.Count;
-    //}
-
-    //[ClientRpc]
-    //public void CmdaddItem(Item item) {
-    //    items.Add(item);
-    //}
-
     [Command]
     public void CmdInitializeAll() {
         /*switch (BasicPlayerInfo.instance.characterIndex) {
@@ -400,5 +233,187 @@ public class Player : NetworkBehaviour {
         isDecelerated = false;
         missileHited = false;
         isStunned = false;
+        winnerId = NetworkInstanceId.Invalid;
     }
+
+    private void eventManager() {
+        //Player1.print(time);
+        if (timeList.Count > listIndex) {
+            for (; listIndex < timeList.Count; listIndex++) {
+                EventBean bean = timeList[listIndex];
+                bean.finishTime = time + bean.delay;
+                timeDic[bean.className] = bean;
+                Item.execute(bean.itemName, this);
+                Player.print("Player " + this.netId + " exec " + bean.itemName + " " + time);
+            }
+        }
+        time++;
+        foreach (string name in new List<string>(timeDic.Keys)) {
+            //Item item = timeDic[name];
+            EventBean item = timeDic[name];
+            if (item.finishTime <= time) {
+                //item.finish();
+                Player.print("finish " + item.itemName + " " + time);
+                Item.finish(item.itemName, this);
+                timeDic.Remove(name);
+            }
+        }
+    }
+
+    void flip() {
+        facingleft = !facingleft;
+        Vector3 temp = transform.localScale;
+        temp.x *= -1;
+        transform.localScale = temp;
+    }
+
+
+    // Use this for initialization
+    void Start() {
+        audios = GetComponents<AudioSource>();
+        flame = transform.Find("Flame").GetComponent<ParticleSystem>();
+        slip = transform.Find("Slip").GetComponent<ParticleSystem>();
+        // dust = transform.Find("Dust").GetComponent<ParticleSystem>();
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        Player.print("width:" + min.x + " , " + max.x);
+        Player.print("height:" + min.y + " , " + max.y);
+        //StartCoroutine(initPlayers());
+        // SpriteRenderer spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
+        int charIndex = 0;
+        for (int i = 0; i < BasicPlayerInfo.instance.CharacterDiscription.Length; i++) {
+            if (role == BasicPlayerInfo.instance.CharacterDiscription[i]) {
+                charIndex = i;
+                break;
+            }
+        }
+        //if (role == "ninja")
+        //     spriteRenderer.sprite = sprites[0];
+        // else if (role == "hunter")
+        //     spriteRenderer.sprite = sprites[1];
+        // else if (role == "enchanter")
+        //     spriteRenderer.sprite = sprites[2];
+        // else if (role == "thief")
+        //     spriteRenderer.sprite = sprites[3];
+        CmdInitializeAll();
+        maincamera = Camera.main;
+        m_RigidBody2D = GetComponent<Rigidbody2D>();
+        armatureComponent = GetComponent<UnityArmatureComponent>();
+        Player.print("eyes" + eyes + "char" + charIndex + "skin" + skin);
+        BasicPlayerInfo.UpdateEyes(eyes, armatureComponent);
+        BasicPlayerInfo.UpdateChar(charIndex, armatureComponent);
+        BasicPlayerInfo.UpdateColor(skin, armatureComponent);
+        int index = 1;
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject gameObj in objs) {
+            Player p = gameObj.GetComponent<Player>();
+            p.GetComponent<UnityArmatureComponent>().transform.position = new Vector3(0.0f, 0.0f, -15.0f + index);
+            index++;
+            if (p.isLocalPlayer) {
+                armatureComponent.transform.position = new Vector3(0.0f, 0.0f, -15.0f);
+            }
+        }
+        items = new List<string>();
+        speedmul = 0.5f;
+        initPlayers();
+        // Warning!!!! make all character's slot as 1
+        slots = 1;
+    }
+
+    // Update is called once per frame
+    void Update() {
+        if (isLocalPlayer == false) {
+            return;
+        }
+        if (winnerId != NetworkInstanceId.Invalid) {
+            GameManager mr = GameObject.Find("GameManager").GetComponent<GameManager>();
+            if (winnerId == netId) {
+                mr.gameOver(name, true);
+            } else {
+                mr.gameOver(winnerName, false);
+            }
+            gameObject.SetActive(false);
+        }
+
+        //Player.print(this.alias);
+        // 下面写控制
+        //movement = new Vector2(Input.GetAxis("Horizontal") * speedmul, 0);
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        float length = 0f;
+        if (Input.GetAxis("Horizontal") != 0)
+            length = Input.GetAxis("Horizontal") * speedmul / 3;
+        else
+            length = Input.acceleration.x * speedmul;
+        if ((facingleft && length < 0) || (length > 0 && !facingleft))
+            flip();
+        //if (transform.position.x + length < min.x - 1)
+        //    length = min.x - 1f - transform.position.x;
+        //if (transform.position.x + length > max.x + 1)
+        //    length = max.x + 1f - transform.position.x;
+        //float scale = Random.Range(-1, 1);
+        length = Mathf.Clamp(length + transform.position.x, min.x, max.x);
+        if (missileHited)
+            movement = new Vector2(length * -1, 0);
+        else
+            movement = new Vector2(length, 0);
+        if (isStunned) {
+            movement = new Vector2(0, 0);
+            flip();
+        }
+        transform.position = new Vector2(length, transform.position.y);
+
+        maincamera.transform.position += new Vector3(0f, transform.position.y - maincamera.transform.position.y, 0);
+
+        //if (Input.GetKeyDown(KeyCode.Space)) {
+        //	CmdFire(this.netId);
+        //}
+
+        if (isStunned && !audios[0].isPlaying) {
+            audios[0].PlayOneShot(slipAudio, 1f);
+            slip.Play();
+        }
+
+        if (speedRatio == 1.5f && !audios[1].isPlaying) {
+            audios[1].PlayOneShot(speedupAudio, 1f);
+            flame.Play();
+        }
+    }
+
+
+    void FixedUpdate() {
+        taskManager();
+        if (isLocalPlayer == false) {
+            return;
+        }
+        if (winnerId != NetworkInstanceId.Invalid) {
+            return;
+        }
+        nowvelocity = m_RigidBody2D.velocity;
+        m_RigidBody2D.velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
+        //m_RigidBody2D.velocity += movement;
+        //m_RigidBody2D.position += movement;
+        eventManager();
+        //Player.print (nowvelocity.y  );
+        if (m_RigidBody2D.velocity.y > 0 && !isUp) {
+            isDown = false;
+            isUp = true;
+            //armatureComponent.animation..Reset ();
+            armatureComponent.animation.Play("TouchBottom", 1);
+            armatureComponent.RemoveEventListener(EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
+            armatureComponent.AddEventListener(EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
+            audios[0].Play();
+        }
+        if (m_RigidBody2D.velocity.y < 0 && !isDown) {
+            isDown = true;
+            isUp = false;
+            //armatureComponent.animation.Reset ();
+            armatureComponent.animation.Play("StartDown", 1);
+            armatureComponent.RemoveEventListener(EventObject.COMPLETE, AnimationController.PlayStandEventHandler);
+            armatureComponent.AddEventListener(EventObject.COMPLETE, AnimationController.PlayDownEventHandler);
+        }
+        //if (nowvelocity.y > 0)
+        //maincamera.transform.position += new Vector3 (0f, Mathf.Max(transform.position.y-maincamera.transform.position.y,0) ,0);
+    }
+
 }

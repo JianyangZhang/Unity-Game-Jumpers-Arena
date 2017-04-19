@@ -23,7 +23,8 @@ public class FinishFloor : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D e) {
         if (e.gameObject.tag.CompareTo("Player") == 0) {
             print("finish");
-            mr.gameOver();
+            //mr.gameOver();
+            e.gameObject.GetComponent<Player>().CmdAddWinner();
         }
     }
 }
