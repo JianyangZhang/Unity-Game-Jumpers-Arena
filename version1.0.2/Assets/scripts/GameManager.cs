@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour {
     public GameObject[] items;
     public float itemTimeInterval;
     public float maxLength;
-    public int initItemNum;
+    public float initLength;
+    public int initRowsNum;
+    public int colsPerRow;
     public GameObject finishDialog;
     public GameObject textBox;
     public GameObject middleDialog;
@@ -22,16 +24,25 @@ public class GameManager : MonoBehaviour {
     }
     // Use this for initialization
     void Start() {
-        for (int i = 0; i < initItemNum; i++) {
-            GameObject item = items[Random.Range(0, items.Length)];
-            Vector3 spawnPosition = new Vector3(
-                //Random.Range(-maxWidth, maxWidth),
-                Random.Range(-3, 3),
-                Random.Range(0, maxLength),
-                -5f
-            );
-            //Quaternion spawnRotation = Quaternion.identity;
-            Instantiate(item, spawnPosition, Quaternion.identity);
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
+        for (int i = 0; i < initRowsNum; i++) {
+            float yAxis = Random.Range(10, initLength);
+            float step = (max.x - min.x) / colsPerRow;
+            float xStart = min.x + step / 2;
+            for (int j = 0; j < colsPerRow; j++) {
+                GameObject item = items[Random.Range(0, items.Length)];
+                Vector3 spawnPosition = new Vector3(
+                    //Random.Range(-maxWidth, maxWidth),
+                    xStart,
+                    yAxis,
+                    -5f
+                );
+                //Quaternion spawnRotation = Quaternion.identity;
+                Instantiate(item, spawnPosition, Quaternion.identity);
+                //Destroy(item, 20f);
+                xStart += step;
+            }
         }
         StartCoroutine(Spawn());
         middleDialog.SetActive(true);
@@ -39,19 +50,28 @@ public class GameManager : MonoBehaviour {
     }
 
     public IEnumerator Spawn() {
+        Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
         yield return new WaitForSeconds(5.0f);
         while (true) {
-            GameObject item = items[Random.Range(0, items.Length)];
-            Vector3 spawnPosition = new Vector3(
-                //Random.Range(-maxWidth, maxWidth),
-                Random.Range(-15, 15),
-                Random.Range(0, 100),
-                -5f
-            );
-            //Quaternion spawnRotation = Quaternion.identity;
-            Instantiate(item, spawnPosition, Quaternion.identity);
+            float yAxis = Random.Range(10, maxLength);
+            float step = (max.x - min.x) / colsPerRow;
+            float xStart = min.x + step / 2;
+            for (int j = 0; j < colsPerRow; j++) {
+                GameObject item = items[Random.Range(0, items.Length)];
+                Vector3 spawnPosition = new Vector3(
+                    //Random.Range(-maxWidth, maxWidth),
+                    xStart,
+                    yAxis,
+                    -5f
+                );
+                //Quaternion spawnRotation = Quaternion.identity;
+                Instantiate(item, spawnPosition, Quaternion.identity);
+                //Destroy(item, 20f);
+                xStart += step;
+            }
             yield return new WaitForSeconds(Random.Range(itemTimeInterval * 0.5f, itemTimeInterval));
-        }
+        }        
     }
 
     // Update is called once per frame

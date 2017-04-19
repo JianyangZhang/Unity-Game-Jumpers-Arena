@@ -305,7 +305,9 @@ MonoBehaviour:
   - {fileID: 1272388119984544, guid: 58a757ce9a80d7344bcfb4adcbe3caa5, type: 2}
   itemTimeInterval: 10
   maxLength: 300
-  initItemNum: 10
+  initLength: 100
+  initRowsNum: 4
+  colsPerRow: 4
   finishDialog: {fileID: 781943035}
   textBox: {fileID: 1126762685}
   middleDialog: {fileID: 570466087}

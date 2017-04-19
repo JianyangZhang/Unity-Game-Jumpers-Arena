@@ -16,11 +16,11 @@ public class RandomMapV2 : MonoBehaviour {
         public FloorMapSetting() {
             blocks = new floorBlockSetting[6];
             blocks[0] = new floorBlockSetting(0, 1, new float[3] { 0.5f, 1f, 1f }, 0, 1, 1, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
-            blocks[1] = new floorBlockSetting(1, 20, new float[3] { 0.5f, 1f, 1f }, 2, 2, 3, 0, new floorPlacing[0]);
-            blocks[2] = new floorBlockSetting(20, 40, new float[3] { 0.5f, 0.75f, 1f }, 2, 2, 4, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
-            blocks[3] = new floorBlockSetting(40, 60, new float[3] { 0.25f, 0.75f, 1f }, 2, 2, 4, 0, new floorPlacing[1] { new floorPlacing(1, 0, 0) });
-            blocks[4] = new floorBlockSetting(60, 80, new float[3] { 0f, 1f, 1f }, 2, 3, 4, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
-            blocks[5] = new floorBlockSetting(80, 300, new float[3] { 0f, 0.75f, 1f }, 1, 3, 4, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
+            blocks[1] = new floorBlockSetting(1, 30, new float[3] { 0.5f, 1f, 1f }, 2, 2, 3, 0, new floorPlacing[0]);
+            blocks[2] = new floorBlockSetting(30, 60, new float[3] { 0.5f, 0.75f, 1f }, 2, 2, 4, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
+            blocks[3] = new floorBlockSetting(60, 90, new float[3] { 0.25f, 0.75f, 1f }, 2, 2, 4, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
+            blocks[4] = new floorBlockSetting(90, 120, new float[3] { 0f, 1f, 1f }, 2, 3, 4, 0, new floorPlacing[1] { new floorPlacing(0, 0, 0) });
+            blocks[5] = new floorBlockSetting(120, 300, new float[3] { 0f, 0.75f, 1f }, 1, 3, 4, 0, new floorPlacing[1] { new floorPlacing(1, 0, 0) });
         }
     }
 
