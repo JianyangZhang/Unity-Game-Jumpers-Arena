@@ -1,0 +1,16 @@
+sceneSetups:
+- path: Assets/scenes/lobby.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/scenes/MainMenu.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/scenes/startmenu.unity
+  isLoaded: 1
+  isActive: 1
+- path: Assets/scenes/run.unity
+  isLoaded: 0
+  isActive: 0
+- path: Assets/SimpleParticlePack/_Scenes/SimpleParticlePack.unity
+  isLoaded: 0
+  isActive: 0
