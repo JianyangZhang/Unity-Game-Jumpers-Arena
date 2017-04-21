@@ -360,13 +360,12 @@ public class Player : NetworkBehaviour {
         //if (transform.position.x + length > max.x + 1)
         //    length = max.x + 1f - transform.position.x;
         //float scale = Random.Range(-1, 1);
-        length = Mathf.Clamp(length + transform.position.x, min.x, max.x);
+
         if (missileHited)
-            movement = new Vector2(length * -1, 0);
-        else
-            movement = new Vector2(length, 0);
+            length = length * -1;
+        length = Mathf.Clamp(length + transform.position.x, min.x, max.x);
         if (isStunned) {
-            movement = new Vector2(0, 0);
+            length = 0;
             flip();
         }
         transform.position = new Vector2(length, transform.position.y);

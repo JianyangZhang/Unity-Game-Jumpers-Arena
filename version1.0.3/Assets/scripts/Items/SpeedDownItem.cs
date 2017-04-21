@@ -18,18 +18,18 @@ public static class SpeedDownItem {
 
     public static void finish(Player player) {
         player.speedRatio = 1;
+        player.isDecelerated = false;
     }
 
     public static void execute(Player currentPlayer) {
         currentPlayer.speedRatio = speedRatio;
+        currentPlayer.isDecelerated = true;
     }
 
     public static void use(Player currentPlayer, List<Player> targetPlayers) {
         //SpeedDownItem.print("Speed Down Use");
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         Player.print(players.Length);
-        currentPlayer.isAccelerated = false;
-        currentPlayer.isDecelerated = true;
         int finishTime = currentPlayer.time + delay;
         //currentPlayer.speedRatio = speedRatio;
         EventBean bean = new EventBean();
