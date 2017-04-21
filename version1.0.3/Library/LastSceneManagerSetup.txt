@@ -11,6 +11,3 @@ sceneSetups:
 - path: Assets/scenes/run.unity
   isLoaded: 0
   isActive: 0
-- path: Assets/SimpleParticlePack/_Scenes/SimpleParticlePack.unity
-  isLoaded: 0
-  isActive: 0

@@ -70,6 +70,7 @@ public class Player : NetworkBehaviour {
     ParticleSystem dust;
 	ParticleSystem missled;
 	ParticleSystem dec;
+	ParticleSystem shield;
     bool facingleft;
     float speedmul;
     Vector2 movement;
@@ -279,6 +280,7 @@ public class Player : NetworkBehaviour {
         slip = transform.Find("Slip").GetComponent<ParticleSystem>();
 		missled = transform.Find("Missled").GetComponent<ParticleSystem>();
 		dec = transform.Find("Dec").GetComponent<ParticleSystem>();
+		shield = transform.Find("Sheild").GetComponent<ParticleSystem>();
         // dust = transform.Find("Dust").GetComponent<ParticleSystem>();
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
@@ -391,6 +393,9 @@ public class Player : NetworkBehaviour {
 		if (isDecelerated && !audios[3].isPlaying) {
 			audios[3].PlayOneShot(decAudio, 1f);
 			dec.Play();
+		}
+		if (isShield) {
+			shield.Play();
 		}
     }
 
