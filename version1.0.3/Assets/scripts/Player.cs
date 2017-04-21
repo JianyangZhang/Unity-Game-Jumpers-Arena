@@ -206,6 +206,12 @@ public class Player : NetworkBehaviour {
     }
 
     [Command]
+    public void CmdDestroyThis(NetworkInstanceId netID) {
+        GameObject theObject = NetworkServer.FindLocalObject(netID);
+        NetworkServer.Destroy(theObject);
+    }
+
+    [Command]
     public void CmdInitializeAll() {
         /*switch (BasicPlayerInfo.instance.characterIndex) {
 			case 0:
@@ -275,6 +281,7 @@ public class Player : NetworkBehaviour {
 
     // Use this for initialization
     void Start() {
+        winnerId = NetworkInstanceId.Invalid;
         audios = GetComponents<AudioSource>();
         flame = transform.Find("Flame").GetComponent<ParticleSystem>();
         slip = transform.Find("Slip").GetComponent<ParticleSystem>();

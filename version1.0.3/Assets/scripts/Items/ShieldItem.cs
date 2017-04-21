@@ -16,6 +16,7 @@ public static class ShieldItem {
 
     public static void use(Player currentPlayer, List<Player> targetPlayers) {
         //SpeedDownItem.print("Speed Down Use");
+        Player.print("Shield On");
         int finishTime = currentPlayer.time + delay;
         EventBean bean = new EventBean();
         bean.finishTime = finishTime;

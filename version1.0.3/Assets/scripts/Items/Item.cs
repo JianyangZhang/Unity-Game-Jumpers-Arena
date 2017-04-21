@@ -48,6 +48,8 @@ public static class Item {
             MissileItem.use(currentPlayer, targetPlayers);
         } else if (itemName == "BananaItem") {
             BananaItem.use(currentPlayer, targetPlayers);
+        } else if (itemName == "ShieldItem") {
+            ShieldItem.use(currentPlayer, targetPlayers);
         }
     }
 
@@ -60,6 +62,8 @@ public static class Item {
             MissileItem.execute(currentPlayer);
         } else if (itemName == "BananaItem") {
             BananaItem.execute(currentPlayer);
+        } else if (itemName == "ShieldItem") {
+            ShieldItem.execute(currentPlayer);
         }
     }
 
@@ -72,6 +76,8 @@ public static class Item {
             MissileItem.finish(currentPlayer);
         } else if (itemName == "BananaItem") {
             BananaItem.finish(currentPlayer);
+        } else if (itemName == "ShieldItem") {
+            ShieldItem.finish(currentPlayer);
         }
     }
 }
