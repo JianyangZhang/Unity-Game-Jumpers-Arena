@@ -9,7 +9,9 @@ public static class MissileItem {
     }
 
     public static void execute(Player currentPlayer) {
-        currentPlayer.missileHited = true;
+        if (!currentPlayer.isShield) {
+            currentPlayer.missileHited = true;
+        }
     }
 
     public static void use(Player currentPlayer, List<Player> targetPlayers) {

@@ -19,6 +19,10 @@ using UnityEngine;
 public static class Item {
     private static List<Player> targetPlayers = null;
 
+    public static void initItem() {
+        targetPlayers = null;
+    }
+
     private static void getPlayers() {
         if (targetPlayers != null)
             return;

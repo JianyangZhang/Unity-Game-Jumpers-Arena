@@ -200,7 +200,7 @@ public class Player : NetworkBehaviour {
         missile_r.GetComponent<Missile>().currentPlayer = current;
         if (target == null) {
             Destroy(missile_r, 2);
-            missile_r.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 0);
+            missile_r.GetComponent<Rigidbody2D>().velocity = new Vector2(3, 15);
         }
         NetworkServer.Spawn(missile_r);
     }

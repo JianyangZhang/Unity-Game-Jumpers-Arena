@@ -13,6 +13,7 @@ public class BaseButton : MonoBehaviour {
     bool isValid;
 
     public void OnClick() {
+        Player.print("Click Item " + item);
         if (isValid) {
             //item.use(player, null);
             Item.use(item, player);

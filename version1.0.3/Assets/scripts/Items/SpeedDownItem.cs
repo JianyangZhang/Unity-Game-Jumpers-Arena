@@ -22,12 +22,15 @@ public static class SpeedDownItem {
     }
 
     public static void execute(Player currentPlayer) {
-        currentPlayer.speedRatio = speedRatio;
-        currentPlayer.isDecelerated = true;
+        if (!currentPlayer.isShield) {
+            currentPlayer.speedRatio = speedRatio;
+            currentPlayer.isAccelerated = false;
+            currentPlayer.isDecelerated = true;
+        }
     }
 
     public static void use(Player currentPlayer, List<Player> targetPlayers) {
-        //SpeedDownItem.print("Speed Down Use");
+        Player.print("Speed Down Use");
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         Player.print(players.Length);
         int finishTime = currentPlayer.time + delay;
@@ -55,6 +58,7 @@ public static class SpeedDownItem {
             }
         }
         //StartCoroutine(waitAndPrint(4f, player));
+
     }
 
     //IEnumerator waitAndPrint(float waitTime, Player player) {

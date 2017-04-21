@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour {
         StartCoroutine(Spawn());
         middleDialog.SetActive(true);
         finishDialog.SetActive(false);
+        Item.initItem();
     }
 
     public IEnumerator Spawn() {
