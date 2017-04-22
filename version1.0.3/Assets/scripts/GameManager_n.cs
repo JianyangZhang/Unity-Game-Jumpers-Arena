@@ -14,13 +14,13 @@ public class GameManager_n : NetworkBehaviour {
     public GameObject powerUp;
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update() {
+
+    }
 
     void Start() {
         init();
-        //StartCoroutine(Spawn());
+        StartCoroutine(Spawn());
     }
 
     //[Server]
@@ -38,14 +38,14 @@ public class GameManager_n : NetworkBehaviour {
                     4f
                 );
                 GameObject item = Instantiate(powerUp, spawnPosition, Quaternion.identity);
-                //Destroy(item, 20f);
+                Destroy(item, 20f);
                 xStart += step;
                 NetworkServer.Spawn(item);
             }
         }
     }
 
-    [Server]
+    //[Server]
     public IEnumerator Spawn() {
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
         Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
@@ -61,7 +61,7 @@ public class GameManager_n : NetworkBehaviour {
                     4f
                 );
                 GameObject item = Instantiate(powerUp, spawnPosition, Quaternion.identity);
-                //Destroy(item, 20f);
+                Destroy(item, 20f);
                 xStart += step;
                 NetworkServer.Spawn(item);
             }
