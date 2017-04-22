@@ -35,7 +35,7 @@ public class GameManager_n : NetworkBehaviour {
                 Vector3 spawnPosition = new Vector3(
                     xStart,
                     yAxis,
-                    -5f
+                    4f
                 );
                 GameObject item = Instantiate(powerUp, spawnPosition, Quaternion.identity);
                 //Destroy(item, 20f);
@@ -58,7 +58,7 @@ public class GameManager_n : NetworkBehaviour {
                 Vector3 spawnPosition = new Vector3(
                     xStart,
                     yAxis,
-                    -5f
+                    4f
                 );
                 GameObject item = Instantiate(powerUp, spawnPosition, Quaternion.identity);
                 //Destroy(item, 20f);

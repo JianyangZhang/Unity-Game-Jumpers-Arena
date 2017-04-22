@@ -70,7 +70,7 @@ public class RandomMapV2 : MonoBehaviour {
         FloorMapSetting fms = new FloorMapSetting();
         float currentheight = 0;
         floorlist = new List<Object>();
-        floorlist.Add(Instantiate(prefabsfloors[0], new Vector3(0, -2, -5), Quaternion.identity, floorcollection));
+        floorlist.Add(Instantiate(prefabsfloors[0], new Vector3(0, -2, 5), Quaternion.identity, floorcollection));
         int pBlock = 0;
         while (currentheight < fms.maxheight) {
 
@@ -83,7 +83,7 @@ public class RandomMapV2 : MonoBehaviour {
                         specprefabsfloors[fms.blocks[pBlock].placingData[iMust].blockType], new Vector3(
                             fms.blocks[pBlock].placingData[iMust].x,
                             fms.blocks[pBlock].startpoint + fms.blocks[pBlock].placingData[iMust].y,
-                            -5),
+                            5),
                         Quaternion.identity,
                         floorcollection
                     )
@@ -105,7 +105,7 @@ public class RandomMapV2 : MonoBehaviour {
                             prefabsfloors[rtype], new Vector3(
                                 Random.Range(-fms.width, fms.width),
                                 currentheight + (iSlice != 0 ? Random.Range(0, fms.blocks[pBlock].minSliceDuration) : 0),
-                                -5),
+                                5),
                             Quaternion.identity,
                             floorcollection
                         )
