@@ -60,6 +60,8 @@ public class PowerupNetwork : NetworkBehaviour {
                 GameObject buttonSlot = GameObject.Find("ButtonSlot");
                 Button btn = buttonSlot.GetComponent<Button>();
                 //Powerup.print(spriteRenderer.sprite.name);
+
+                btn.GetComponent<Image>().color = new Color(222, 222, 222, 255);
                 btn.GetComponent<Image>().sprite = itemImages[index];
                 BaseButton baseBtn = btn.GetComponent<BaseButton>();
                 baseBtn.setParam(player, itemIndex, item);

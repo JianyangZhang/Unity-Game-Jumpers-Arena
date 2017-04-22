@@ -20,8 +20,11 @@ public class BaseButton : MonoBehaviour {
 
 
             player.items.RemoveAt(itemIndex);
+
             gameObject.GetComponent<Image>().sprite = sprite;
+            gameObject.GetComponent<Image>().color = new Color(222, 222, 222, 0);
             isValid = false;
+
         }
     }
 

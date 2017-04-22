@@ -372,7 +372,7 @@ public class Player : NetworkBehaviour {
             length = length * -1;
         length = Mathf.Clamp(length + transform.position.x, min.x, max.x);
         if (isStunned) {
-            length = 0;
+            length = transform.position.x;
             flip();
         }
         transform.position = new Vector2(length, transform.position.y);
@@ -400,7 +400,7 @@ public class Player : NetworkBehaviour {
 			audios[3].PlayOneShot(decAudio, 1f);
 			dec.Play();
 		}
-		if (isShield) {
+		if (isShield && !shield.isPlaying) {
 			shield.Play();
 		}
     }
