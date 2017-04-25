@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Solo/Resources/Scenes/run_solo.unity
+  isLoaded: 1
+  isActive: 1

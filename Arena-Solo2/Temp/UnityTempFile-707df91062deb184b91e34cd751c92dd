@@ -1,0 +1,244 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp-Editor.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/Editor/UnityEditor.PlaymodeTestsRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_1
+-define:UNITY_5_5
+-define:UNITY_5
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_ANDROID
+-define:ENABLE_SUBSTANCE
+-define:UNITY_ANDROID_API
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:UNITY_CAN_SHOW_SPLASH_SCREEN
+-define:ENABLE_VIDEO
+-define:ENABLE_VR
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:ENABLE_DUCK_TYPING
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationBaker.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationFixer/AnimationFixer.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/AnimationWindowExtra.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/AnimationWindowImpl_50.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/AnimationWindowImpl_51_52_53.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/AnimationWindowImpl_54.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/AnimationWindowImpl_55.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/AnimationWindowImpl_56.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/AnimationWindowExtra/IAnimationWindowImpl.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BbwPlugin.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BindInfo.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BlendShape.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BlendShapeEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BlendShapeFrame.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BlendShapeFrameEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Bone2DEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BoneUtils.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/BoneWeight.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/ColorRing.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/ContextMenu.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/CurveUtility.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Edge.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/EditorEventHandler.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/EditorExtra.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/EditorGUIExtra.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/EditorUpdater.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Exporter/Exporter.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Gizmos.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/HandlesExtra.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Hole.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Ik2DEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/IkCCD2DEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/IkGroupEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/IkLimb2DEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/IkUtils.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/IndexedEdge.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/InspectorEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/KeyframeUtility.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/MaskCreator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/MeshToolEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Node.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/OnionSkin/MaterialCache.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/OnionSkin/ObjectPool.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/OnionSkin/OnionLayer.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/OnionSkin/OnionLayerManager.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/OnionSkin/OnionSkinWindow.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/PoseManagerEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/PoseUtils.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/RectHandles.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/ScriptableObjectUtility.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SelectionRectTool.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SerializedCache.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SliceEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshAnimationEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshCache.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshData.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshEditorWindow.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshInstanceEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshInstancePostProcessor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshPostprocessor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/SpriteMeshUtils.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TextureEditorWindow.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/BlendShapeFrameDopeElement.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/IDopeElement.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/TickHandler.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/TickStyle.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/TimeArea.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/TimeLine.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/TimeLine/ZoomableArea.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/ToolsExtra.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Algorithm/Dwyer.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Algorithm/ITriangulator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Algorithm/Incremental.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Algorithm/SweepLine.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/BadTriQueue.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Behavior.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Carver.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/BadSubseg.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/BadTriangle.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/Osub.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/Otri.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/Segment.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/Triangle.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Data/Vertex.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Enums.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/BoundingBox.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/Edge.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/EdgeEnumerator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/ISegment.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/ITriangle.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/InputGeometry.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/Point.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Geometry/RegionPointer.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/DataReader.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/DebugWriter.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/FileReader.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/FileWriter.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/IGeometryFormat.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/IMeshFormat.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/InputTriangle.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/IO/TriangleFormat.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Log/ILog.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Log/ILogItem.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Log/SimpleLog.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Log/SimpleLogItem.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Mesh.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/NewLocation.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Primitives.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Quality.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Sampler.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Smoothing/ISmoother.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Smoothing/SimpleSmoother.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/AdjacencyMatrix.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/BoundedVoronoi.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/CuthillMcKee.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/IVoronoi.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/QuadTree.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/QualityMeasure.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/RegionIterator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/Statistic.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/Voronoi.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/Tools/VoronoiRegion.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/Triangle/TriangleLocator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexAnimation/BakedMesh.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexAnimation/SpriteMeshInstanceTracker.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexAnimation/TransformTracker.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexAnimation/VertexSelection.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/IVertexManipulable.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/IVertexManipulator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/RectManipulator/IRectManipulable.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/RectManipulator/IRectManipulatorData.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/RectManipulator/RectManipulator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/RectManipulator/RectManipulatorData.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/RectManipulator/RectManipulatorParams.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/VertexManipulator/VertexManipulator.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/WeightEditor.cs
+Assets/Solo/Resources/Anima2D/Scripts/Editor/WindowEditorTool.cs
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll"
+-sdk:2.0

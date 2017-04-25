@@ -1,0 +1,137 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_5_1
+-define:UNITY_5_5
+-define:UNITY_5
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_SCRIPTING_NEW_CSHARP_COMPILER
+-define:UNITY_WEBGL
+-define:UNITY_WEBGL_API
+-define:UNITY_DISABLE_WEB_VERIFICATION
+-define:UNITY_GFX_USE_PLATFORM_VSYNC
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_VR
+-define:ENABLE_IL2CPP
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+Assets/CameraPowerup.cs
+Assets/CoinPowerup.cs
+Assets/KuromakuPowerup.cs
+Assets/SimplePowerup.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/CharacterMotion.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/Follow.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/SkinnedMeshCombiner.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/SpringBone.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/SpringCollider.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/SpringManager.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/SpriteCycle.cs
+Assets/Solo/Resources/Anima2D/Examples/Scripts/SpriteCycleParallax.cs
+Assets/Solo/Resources/Anima2D/Scripts/Bone2D.cs
+Assets/Solo/Resources/Anima2D/Scripts/Control.cs
+Assets/Solo/Resources/Anima2D/Scripts/EditorUpdaterProxy.cs
+Assets/Solo/Resources/Anima2D/Scripts/Ik2D.cs
+Assets/Solo/Resources/Anima2D/Scripts/IkCCD2D.cs
+Assets/Solo/Resources/Anima2D/Scripts/IkGroup.cs
+Assets/Solo/Resources/Anima2D/Scripts/IkLimb2D.cs
+Assets/Solo/Resources/Anima2D/Scripts/IkSolver2D.cs
+Assets/Solo/Resources/Anima2D/Scripts/IkSolver2DCCD.cs
+Assets/Solo/Resources/Anima2D/Scripts/IkSolver2DLimb.cs
+Assets/Solo/Resources/Anima2D/Scripts/MathUtils.cs
+Assets/Solo/Resources/Anima2D/Scripts/Pose.cs
+Assets/Solo/Resources/Anima2D/Scripts/PoseManager.cs
+Assets/Solo/Resources/Anima2D/Scripts/SpriteMesh.cs
+Assets/Solo/Resources/Anima2D/Scripts/SpriteMeshAnimation.cs
+Assets/Solo/Resources/Anima2D/Scripts/SpriteMeshInstance.cs
+Assets/Solo/Resources/DrawingShield.cs
+Assets/Solo/Resources/FollowScreen.cs
+Assets/Solo/Resources/MainHelper.cs
+Assets/Solo/Resources/Scripts/Background/simplescroll.cs
+Assets/Solo/Resources/Scripts/Basic/Bullet.cs
+Assets/Solo/Resources/Scripts/Basic/Enemy.cs
+Assets/Solo/Resources/Scripts/Basic/SimpleFloor.cs
+Assets/Solo/Resources/Scripts/Bullet/BasicBullet.cs
+Assets/Solo/Resources/Scripts/Destroy.cs
+Assets/Solo/Resources/Scripts/Floor/FinishFloor.cs
+Assets/Solo/Resources/Scripts/Floor/FlashFloor.cs
+Assets/Solo/Resources/Scripts/Floor/MovingFloor.cs
+Assets/Solo/Resources/Scripts/GameManager.cs
+Assets/Solo/Resources/Scripts/Helper/BorderDetection.cs
+Assets/Solo/Resources/Scripts/Helper/Helper.cs
+Assets/Solo/Resources/Scripts/Helper/RandomMapV2.cs
+Assets/Solo/Resources/Scripts/Item.cs
+Assets/Solo/Resources/Scripts/Player/Character.cs
+Assets/Solo/Resources/Scripts/Player/Player.cs
+Assets/Solo/Resources/Scripts/Player/Player_Control.cs
+Assets/Solo/Resources/Scripts/Temp/Hero.cs
+Assets/Solo/Resources/Scripts/Temp/Onpu.cs
+Assets/Solo/Resources/Scripts/Temp/RandomMap.cs
+Assets/Solo/Resources/Scripts/UI/TextShow.cs
+Assets/Solo/Resources/SimpleShooter.cs
+Assets/Solo/Resources/Static.cs
+Assets/Solo/Resources/U_Path.cs
+Assets/Solo/Resources/interfaces.cs
+Assets/Solo/Resources/multiscroll.cs
+Assets/jumpPowerup.cs
+Assets/logofadeout.cs
+Assets/shieldSpeedup.cs
+Assets/spaceshipPowerup.cs
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity
