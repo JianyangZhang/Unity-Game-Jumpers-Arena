@@ -183,7 +183,7 @@ public class Player : NetworkBehaviour {
                 break;
             }
         }
-        float loc = float.MaxValue;
+		float loc = float.MinValue;
         foreach (Player p in players) {
             if (p.netId != currentID) {
                 if ((p.transform.position.y > current.transform.position.y) && (loc < p.transform.position.y)) {
