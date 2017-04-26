@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 2283efe0f8c2fe34ba8c628e51a5f1a9
+timeCreated: 1487025717
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Komika Parch
+  fontNames:
+  - Komika Parch
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
