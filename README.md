@@ -5,8 +5,6 @@
 `GamePipe Laboratory Showcase:` http://gamepipe.usc.edu/<br/>
 `Poster:` ![poster-min](https://cloud.githubusercontent.com/assets/22739177/25870935/b113b8d2-34ba-11e7-865f-3389a54efc50.jpg)<br/>
 
-
-
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 **Jianyang Zhang**<br/>
