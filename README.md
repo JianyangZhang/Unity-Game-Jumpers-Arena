@@ -5,6 +5,8 @@
 `GamePipe Laboratory Showcase:` http://gamepipe.usc.edu/<br/>
 `Poster:` ![poster-min](https://cloud.githubusercontent.com/assets/22739177/25870935/b113b8d2-34ba-11e7-865f-3389a54efc50.jpg)<br/>
 
+-------------------------------------------------------------------------------------------------------------------------------------------
+
 **Jianyang Zhang**<br/>
 Team Leader, progress monitoring and version control. Also in charge of the multiplayer lobby system and front-end elements development.
 
