@@ -1,4 +1,4 @@
-<h4>Jumpers Arena is a mobile platform racing game made by Unity3D engine. Players can have a match with another players online, or fight against monsters solo. This game was elected to the USC GamePipe Showcase in May 2017.</h4>
+Jumpers Arena is a mobile platform racing game made by Unity3D engine. Players can have a match with another players online, or fight against monsters solo. This game was elected to the ***USC GamePipe Showcase in May 2017.***
 
 `Website:` https://jianyangzhang.github.io/JumpersPage/<br/>
 `Trailer:` https://www.youtube.com/watch?v=QoYYj7X5o18<br/>
