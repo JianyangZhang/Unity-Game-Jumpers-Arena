@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 **Jianyang Zhang**<br/>
-Team Leader, progress monitoring and version control. Also in charge of the multiplayer lobby system and front-end elements development.
+Team Leader, progress monitoring and version control. Also in charge of the multiplayer lobby system implementation and front-end elements development.
 
 **Yiye Lin**<br/>
 Designer, in charge of our UI/UX design, all of the art asset comes from her hands.
@@ -17,13 +17,13 @@ Designer, in charge of our UI/UX design, all of the art asset comes from her han
 Game Developer, in charge of multiplayer mode development, solved many complex network issues.
 
 **Dateng Liu**<br/>
-Game Developer, Test, tested our game and makes our game a perfect balanced game.
+Tester, find bugs and report, tested our game and made it perfectly balanced
 
 **Haotian Zhang**<br/>
-Game Developer, in charge of single player mode development, build the single game logic and reusable interface for multiplayer.
+Game Developer, in charge of the single player mode development, built basic single player game logic and reusable interfaces for the multiplayer mode.
 
 **Yufei Zhang**<br/>
-Game Developer, mainly focus on the AI development and tried best to make our AI "smart".
+Game Developer, mainly focused on the boss fight design and AI development, tried best to make our enemies "smart".
 
 **Xinwei Li**<br/>
-Web Developer, in charge of our website development and also did game test tasks.
+Web Developer, in charge of this website development and also did some game test tasks.
